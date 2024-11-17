@@ -1,0 +1,3094 @@
+@prefix : <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix untitled-ontology-60: <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#> .
+@base <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60/> .
+
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Synonysm
+untitled-ontology-60:Synonysm rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#abbreviation
+untitled-ontology-60:abbreviation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#definition
+untitled-ontology-60:definition rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#demand_attributes
+untitled-ontology-60:demand_attributes rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#demand_calculation_model
+untitled-ontology-60:demand_calculation_model rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                              rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#demandsSourceOfEnergy
+untitled-ontology-60:demandsSourceOfEnergy rdf:type owl:ObjectProperty ;
+                                           rdfs:domain untitled-ontology-60:EnergyDemand ;
+                                           rdfs:range untitled-ontology-60:EnergySource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#disposesEnergy
+untitled-ontology-60:disposesEnergy rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:energyCarrierProperty ;
+                                    rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                    rdfs:range untitled-ontology-60:EnergySource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energyCarrierProperty
+untitled-ontology-60:energyCarrierProperty rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasEnergyDemandProfile
+untitled-ontology-60:hasEnergyDemandProfile rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:energyCarrierProperty ;
+                                            rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                            rdfs:range untitled-ontology-60:EnergyDemandProfile .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasEnergyTechnology
+untitled-ontology-60:hasEnergyTechnology rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                         rdfs:domain untitled-ontology-60:EnergyCarrier ,
+                                                     untitled-ontology-60:EnergyUser ;
+                                         rdfs:range untitled-ontology-60:EnergyTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasFeedstockBiomass
+untitled-ontology-60:hasFeedstockBiomass rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:technologyRelations ;
+                                         rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                         rdfs:range untitled-ontology-60:PrimarySolidBiofuel ,
+                                                    untitled-ontology-60:SecondarySolidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasFinalProduct
+untitled-ontology-60:hasFinalProduct rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf untitled-ontology-60:technologyRelations ;
+                                     rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                     rdfs:range untitled-ontology-60:SecondaryGasBiofuels ,
+                                                untitled-ontology-60:SecondaryLiquidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasLocation
+untitled-ontology-60:hasLocation rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                 rdfs:domain untitled-ontology-60:EnergyCarrier ,
+                                             untitled-ontology-60:EnergyPolicy ,
+                                             untitled-ontology-60:EnergyUser ;
+                                 rdfs:range untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasMainInputEnergyCarrier
+untitled-ontology-60:hasMainInputEnergyCarrier rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf untitled-ontology-60:technologyRelations ;
+                                               rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                               rdfs:range untitled-ontology-60:EnergyCarrier .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#hasMainOutputEnergyCarrier
+untitled-ontology-60:hasMainOutputEnergyCarrier rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:technologyRelations ;
+                                                rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                rdfs:range untitled-ontology-60:EnergyCarrier .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#isBasedOnScenario
+untitled-ontology-60:isBasedOnScenario rdf:type owl:ObjectProperty ;
+                                       rdfs:domain untitled-ontology-60:EnergyDemand ;
+                                       rdfs:range untitled-ontology-60:Scenario .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#isGeneratedBy
+untitled-ontology-60:isGeneratedBy rdf:type owl:ObjectProperty ;
+                                   rdfs:domain untitled-ontology-60:EnergyDemand ;
+                                   rdfs:range untitled-ontology-60:EnergyUser .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#isRelatedToEnergyUseSector
+untitled-ontology-60:isRelatedToEnergyUseSector rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#physical_resolution
+untitled-ontology-60:physical_resolution rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                         rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#relatedToEnergyCarrier
+untitled-ontology-60:relatedToEnergyCarrier rdf:type owl:ObjectProperty ;
+                                            rdfs:domain untitled-ontology-60:PrimaryEnergyDemand ;
+                                            rdfs:range untitled-ontology-60:EnergyCarrier .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#relatedToEnergyUser
+untitled-ontology-60:relatedToEnergyUser rdf:type owl:ObjectProperty ;
+                                         rdfs:domain untitled-ontology-60:FinalEnergyDemand ;
+                                         rdfs:range untitled-ontology-60:EnergyUser .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#single_value
+untitled-ontology-60:single_value rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                  rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#technologyRelations
+untitled-ontology-60:technologyRelations rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#temporal_resolution
+untitled-ontology-60:temporal_resolution rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                         rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_horizon
+untitled-ontology-60:time_horizon rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                  rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_reference
+untitled-ontology-60:time_reference rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                    rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_series_forecasting
+untitled-ontology-60:time_series_forecasting rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                             rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_stamp
+untitled-ontology-60:time_stamp rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_step
+untitled-ontology-60:time_step rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                               rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#unit_of_measure
+untitled-ontology-60:unit_of_measure rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                     rdfs:domain untitled-ontology-60:EnergyDemand .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CO2_emission_per_hour
+untitled-ontology-60:CO2_emission_per_hour rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                           rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CO2_emissions_per_kWh
+untitled-ontology-60:CO2_emissions_per_kWh rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                           rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CO2_intensity
+untitled-ontology-60:CO2_intensity rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf untitled-ontology-60:energy_carrier_export_attributes ;
+                                   rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CO2_intensity_per_hour
+untitled-ontology-60:CO2_intensity_per_hour rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:energy_carrier_export_attributes ;
+                                            rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                            rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ID
+untitled-ontology-60:ID rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                        rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ambient_atmosphere
+untitled-ontology-60:ambient_atmosphere rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                                        rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "Value O/I"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#capital_cost
+untitled-ontology-60:capital_cost rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                  rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                  rdfs:range xsd:float ;
+                                  rdfs:comment "value in M.U./kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#charging_efficiency
+untitled-ontology-60:charging_efficiency rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                         rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                         rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#control_and_communication_cost
+untitled-ontology-60:control_and_communication_cost rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                                    rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#conversion_cost_operational_and_maintenance_per_energy
+untitled-ontology-60:conversion_cost_operational_and_maintenance_per_energy rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                                                            rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                                                            rdfs:range xsd:float ;
+                                                                            rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#conversion_efficiency
+untitled-ontology-60:conversion_efficiency rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                           rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                           rdfs:range xsd:float ;
+                                           rdfs:comment "value between 0≬1"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#conversion_efficiency_per_time_step
+untitled-ontology-60:conversion_efficiency_per_time_step rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                                         rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                                         rdfs:range xsd:float ;
+                                                         rdfs:comment "value between 0≬1"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#coupled_capacity
+untitled-ontology-60:coupled_capacity rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                      rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                      rdfs:range xsd:integer ;
+                                      rdfs:comment "Value O/I" .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#current_state_of_charge
+untitled-ontology-60:current_state_of_charge rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                             rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                             rdfs:range xsd:float ;
+                                             untitled-ontology-60:abbreviation "SoC" ;
+                                             rdfs:comment "value between 0≬1"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#curtailment_factor
+untitled-ontology-60:curtailment_factor rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                        rdfs:domain untitled-ontology-60:SolarEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#cut_in_speed
+untitled-ontology-60:cut_in_speed rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                  rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                  rdfs:range xsd:float ;
+                                  untitled-ontology-60:definition "The cut-in speed (typically between 6 and 9 mph) is when the blades start rotating and generating power."@en ;
+                                  rdfs:comment "value in mph"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#cut_off_speed
+untitled-ontology-60:cut_off_speed rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                   rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                   rdfs:range xsd:float ;
+                                   untitled-ontology-60:definition "After reaching cut-out speed (varies by turbine),the turbine is shuting down to prevent unnecessary strain on the rotor."@en ,
+                                                                   "Value in mph"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#decommissioning_cost
+untitled-ontology-60:decommissioning_cost rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf untitled-ontology-60:ecconomic_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#demand_attributes
+untitled-ontology-60:demand_attributes rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#demand_calculation_model
+untitled-ontology-60:demand_calculation_model rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#disassembly_or_removal_cost
+untitled-ontology-60:disassembly_or_removal_cost rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf untitled-ontology-60:decommissioning_cost ;
+                                                 rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                 rdfs:range xsd:float ;
+                                                 rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#discharging_efficiency
+untitled-ontology-60:discharging_efficiency rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                            rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                            rdfs:range xsd:float ;
+                                            rdfs:comment "value in M.U./kWh"@es .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#disconnection_cost
+untitled-ontology-60:disconnection_cost rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:decommissioning_cost ;
+                                        rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#downstream_production_time
+untitled-ontology-60:downstream_production_time rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                                rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                                rdfs:range xsd:int ;
+                                                rdfs:comment "value in minutes"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ecconomic_attribute
+untitled-ontology-60:ecconomic_attribute rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#efficiency_in
+untitled-ontology-60:efficiency_in rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                   rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                   rdfs:range xsd:float ;
+                                   rdfs:comment "Velues 0≬1"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#efficiency_out
+untitled-ontology-60:efficiency_out rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                    rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                    rdfs:range xsd:float ;
+                                    rdfs:comment "Values 0≬1"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#electrolizer_attibutes
+untitled-ontology-60:electrolizer_attibutes rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_carrier_attributes
+untitled-ontology-60:energy_carrier_attributes rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_carrier_export_attributes
+untitled-ontology-60:energy_carrier_export_attributes rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:energy_carrier_attributes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_carrier_import_attributes
+untitled-ontology-60:energy_carrier_import_attributes rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:energy_carrier_attributes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_carrier_type
+untitled-ontology-60:energy_carrier_type rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:energy_carrier_attributes ;
+                                         rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                      owl:oneOf [ rdf:type rdf:List ;
+                                                                  rdf:first "Export" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Import" ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                                    ] .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_consumption
+untitled-ontology-60:energy_consumption rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                        rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in kWh/kgH_2"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_conversion_attribute
+untitled-ontology-60:energy_conversion_attribute rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf untitled-ontology-60:energy_technology_attributes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_storage_attribute
+untitled-ontology-60:energy_storage_attribute rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:energy_technology_attributes ;
+                                              rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_technology_attributes
+untitled-ontology-60:energy_technology_attributes rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#energy_use_sector_type
+untitled-ontology-60:energy_use_sector_type rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                            rdfs:domain untitled-ontology-60:AnthropogenicEcosystem ;
+                                            rdfs:range [ rdf:type rdfs:Datatype ;
+                                                         owl:oneOf [ rdf:type rdf:List ;
+                                                                     rdf:first "Commercial" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "Industrial" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "Residential" ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "Services" ;
+                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                 rdf:first "Transport" ;
+                                                                                                                 rdf:rest rdf:nil
+                                                                                                               ]
+                                                                                                    ]
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                       ] ;
+                                            rdfs:comment "{\"Residential\", \"Industrial\", \"Commercial\", \"Services\", \"Transport\"}"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#engineerings_procurement_and_construction_cost
+untitled-ontology-60:engineerings_procurement_and_construction_cost rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf untitled-ontology-60:installed_capital_price ;
+                                                                    rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                                    rdfs:range xsd:float ;
+                                                                    untitled-ontology-60:definition "Cost that includes nonrecurring engineering costs and construction equipment as well as siting, installation, and commissioning of the ESS."@en ;
+                                                                    rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#environmental_attribute
+untitled-ontology-60:environmental_attribute rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#export_price_per_kWh
+untitled-ontology-60:export_price_per_kWh rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf untitled-ontology-60:energy_carrier_export_attributes ;
+                                          rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                          rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#fixed_operational_and_maintenance_cost
+untitled-ontology-60:fixed_operational_and_maintenance_cost rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf untitled-ontology-60:operating_cost ;
+                                                            rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                            rdfs:range xsd:float ;
+                                                            untitled-ontology-60:definition """A cost that includes all costs necessary to keep theenergy technology operational throughout its life that do not fluctuate based on energy throughput, such as planned maintenance, parts, and labor and benefits for staff.
+This also includes major overhaul-related maintenance which may depend on energy throughput or occurs at fixed time intervals."""@en ;
+                                                            rdfs:comment "value in M.U./kW-year"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#flow_rate
+untitled-ontology-60:flow_rate rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                               rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                               rdfs:range xsd:float ;
+                               rdfs:comment "Value in LPM"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#genaral_conversion_performance_attribute
+untitled-ontology-60:genaral_conversion_performance_attribute rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf untitled-ontology-60:energy_conversion_attribute ;
+                                                              rdfs:comment "value O/I"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#general_technology_attribute
+untitled-ontology-60:general_technology_attribute rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf untitled-ontology-60:energy_technology_attributes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#grid_integration_cost
+untitled-ontology-60:grid_integration_cost rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:installed_capital_price ;
+                                           rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                           rdfs:range xsd:float ;
+                                           untitled-ontology-60:definition "Costs associated with connecting the EnergyTechnology to the grid, including transformer cost, metering, and isolation breakers."@en ;
+                                           rdfs:comment "Value in M.U./kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#heat_rate
+untitled-ontology-60:heat_rate rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                               rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                               rdfs:range xsd:float ;
+                               rdfs:comment "Value in °C/min"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#heating_supply_system_type
+untitled-ontology-60:heating_supply_system_type rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                                rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                                rdfs:range [ rdf:type rdfs:Datatype ;
+                                                             owl:oneOf [ rdf:type rdf:List ;
+                                                                         rdf:first "Burning" ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "Hot-gases" ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "Inner-hot-material" ;
+                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                          rdf:first "Reactor-walls" ;
+                                                                                                          rdf:rest rdf:nil
+                                                                                                        ]
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                           ] .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#import_cost_per_kWh
+untitled-ontology-60:import_cost_per_kWh rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                         rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                         rdfs:range xsd:float ;
+                                         rdfs:comment "value in M.U./TWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#installed_capital_price
+untitled-ontology-60:installed_capital_price rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:ecconomic_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#installed_cost_components
+untitled-ontology-60:installed_cost_components rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#insurance_cost
+untitled-ontology-60:insurance_cost rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:operating_cost ;
+                                    rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                    rdfs:range xsd:float ;
+                                    untitled-ontology-60:definition "Insurance fees to hold a policy to cover unknown and/or unexpected risks. The terms of this cost may depend on developer reputation, project complexity, location, and financial strength."@en ;
+                                    rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#lifecycle_C02_emmissions
+untitled-ontology-60:lifecycle_C02_emmissions rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:environmental_attribute ;
+                                              rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                              rdfs:range xsd:float ;
+                                              rdfs:comment "Value in kg-CO2/kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#lifetime
+untitled-ontology-60:lifetime rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                              rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                              rdfs:range xsd:float ;
+                              rdfs:comment "Value in years"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#lifetime_of_stack
+untitled-ontology-60:lifetime_of_stack rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                       rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                       rdfs:range xsd:float ;
+                                       rdfs:comment "value in hours"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#lifetime_of_system
+untitled-ontology-60:lifetime_of_system rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                        rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in years"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_capacity_per_installation
+untitled-ontology-60:maximum_capacity_per_installation rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf untitled-ontology-60:system_attributes ;
+                                                       rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                       rdfs:range xsd:float ;
+                                                       rdfs:comment "value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_charging_rate
+untitled-ontology-60:maximum_charging_rate rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                           rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_discharging_rate
+untitled-ontology-60:maximum_discharging_rate rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                              rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                              rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_export_capacity
+untitled-ontology-60:maximum_export_capacity rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_carrier_export_attributes ;
+                                             rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_export_capacity_per_hour
+untitled-ontology-60:maximum_export_capacity_per_hour rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:energy_carrier_export_attributes ;
+                                                      rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                                      rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_import_capacity
+untitled-ontology-60:maximum_import_capacity rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                             rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_import_capacity_per_hour
+untitled-ontology-60:maximum_import_capacity_per_hour rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                                      rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                                      rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_ramping_down
+untitled-ontology-60:maximum_ramping_down rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                          rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                          rdfs:range xsd:float ;
+                                          rdfs:comment "value in percentage/min"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_ramping_up
+untitled-ontology-60:maximum_ramping_up rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                        rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in percentage/min"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_state_of_charge
+untitled-ontology-60:maximum_state_of_charge rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                             rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_total_energy_output
+untitled-ontology-60:maximum_total_energy_output rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                                 rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                                 rdfs:range xsd:float ;
+                                                 rdfs:comment "Value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#maximum_value_for_annual_import
+untitled-ontology-60:maximum_value_for_annual_import rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                                     rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_capacity_per_installation
+untitled-ontology-60:minimum_capacity_per_installation rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf untitled-ontology-60:system_attributes ;
+                                                       rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                       rdfs:range xsd:float ;
+                                                       rdfs:comment "value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_capacity_per_technology
+untitled-ontology-60:minimum_capacity_per_technology rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf untitled-ontology-60:system_attributes ;
+                                                     rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                     rdfs:range xsd:float ;
+                                                     rdfs:comment "value in 9kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_import_capacity
+untitled-ontology-60:minimum_import_capacity rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                             rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_import_capacity_per_hour
+untitled-ontology-60:minimum_import_capacity_per_hour rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                                      rdfs:domain untitled-ontology-60:EnergyCarrier .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_state_of_charge
+untitled-ontology-60:minimum_state_of_charge rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                             rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_total_energy_output
+untitled-ontology-60:minimum_total_energy_output rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf untitled-ontology-60:genaral_conversion_performance_attribute ;
+                                                 rdfs:domain untitled-ontology-60:EnergyConversionTechnology ;
+                                                 rdfs:range xsd:float ;
+                                                 rdfs:comment "value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#minimum_value_for_annual_import
+untitled-ontology-60:minimum_value_for_annual_import rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf untitled-ontology-60:energy_carrier_import_attributes ;
+                                                     rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#name
+untitled-ontology-60:name rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                          rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#nominal_wind_speed
+untitled-ontology-60:nominal_wind_speed rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                        rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in m/s"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#operating_cost
+untitled-ontology-60:operating_cost rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:ecconomic_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#particle_density
+untitled-ontology-60:particle_density rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                                      rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                      rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#patrticle_size
+untitled-ontology-60:patrticle_size rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                                    rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                    rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#physical_resolution
+untitled-ontology-60:physical_resolution rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#power_equipment_cost
+untitled-ontology-60:power_equipment_cost rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                          rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                          rdfs:range xsd:float ;
+                                          rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pre_installed_capacity
+untitled-ontology-60:pre_installed_capacity rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:system_attributes ;
+                                            rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                            rdfs:range xsd:float ;
+                                            rdfs:comment "value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pre_installed_remaining_lifetime
+untitled-ontology-60:pre_installed_remaining_lifetime rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf untitled-ontology-60:system_attributes ;
+                                                      rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                      rdfs:range xsd:float ;
+                                                      rdfs:comment "value in kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#preprocessing_time
+untitled-ontology-60:preprocessing_time rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                        rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                        rdfs:range xsd:int ;
+                                        rdfs:comment "value in minutes"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pressure
+untitled-ontology-60:pressure rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                              rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                              rdfs:range xsd:float ;
+                              rdfs:comment "value in kPa" .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pressure_range
+untitled-ontology-60:pressure_range rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                    rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                    rdfs:range xsd:float ;
+                                    rdfs:comment "range values in barA"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#price
+untitled-ontology-60:price rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf untitled-ontology-60:energy_carrier_attributes ;
+                           rdfs:domain untitled-ontology-60:EnergyCarrier ;
+                           rdfs:range xsd:float ;
+                           rdfs:comment "value in M.U./TWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#process_type
+untitled-ontology-60:process_type rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                  rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                  rdfs:range [ rdf:type rdfs:Datatype ;
+                                               owl:oneOf [ rdf:type rdf:List ;
+                                                           rdf:first " Methane-pyrolysis" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "Fast" ;
+                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                 rdf:first "Flash" ;
+                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                            rdf:first "Flash-gas" ;
+                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                       rdf:first "Flash-liquid" ;
+                                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                                  rdf:first "Hydro-pyrolysis" ;
+                                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                                             rdf:first "Intermediate" ;
+                                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                        rdf:first "Slow" ;
+                                                                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                   rdf:first "Ultra" ;
+                                                                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                              rdf:first "Vacuum" ;
+                                                                                                                                                              rdf:rest rdf:nil
+                                                                                                                                                            ]
+                                                                                                                                                 ]
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                             ] .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#project_development-cost
+untitled-ontology-60:project_development-cost rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf untitled-ontology-60:installed_capital_price ;
+                                              rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                              rdfs:range xsd:float ;
+                                              untitled-ontology-60:definition "Costs associated with permitting, power purchase agreements, interconnection agreements, site control, and financing."@en ;
+                                              rdfs:comment "value in M.U./kW"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pyrolysis_convesion_attibute
+untitled-ontology-60:pyrolysis_convesion_attibute rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf untitled-ontology-60:energy_conversion_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#pyrolysis_process_control_attributes
+untitled-ontology-60:pyrolysis_process_control_attributes rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                                          rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#rated_speed
+untitled-ontology-60:rated_speed rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                 rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                 rdfs:range xsd:float ;
+                                 untitled-ontology-60:definition "The rated speed is the point that the turbine produces its maximum, or rated power, as wind speeds increase, more electricity is generated until it reaches this limit.."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#recycling_or_disposal_cost
+untitled-ontology-60:recycling_or_disposal_cost rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:decommissioning_cost ;
+                                                rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                rdfs:range xsd:float ;
+                                                untitled-ontology-60:definition "Net costs associated with recycling and disposing of components less any costs recouped from sale of materials. The value of recouped materials is typically measured in cents/pound."@en ;
+                                                rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#residence_time
+untitled-ontology-60:residence_time rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                                    rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                    rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#rotor_area
+untitled-ontology-60:rotor_area rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                rdfs:range xsd:float ;
+                                rdfs:comment "value in m2"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#round-trip_efficiency_losses_cost
+untitled-ontology-60:round-trip_efficiency_losses_cost rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf untitled-ontology-60:operating_cost ,
+                                                                          untitled-ontology-60:storage_operating_cost ;
+                                                       rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                       rdfs:range xsd:float ;
+                                                       untitled-ontology-60:definition "Round-trip efficiency is simply the ratio of energy discharged to the grid from a starting state of charge to the energy received from the grid to bring the ESS to the same starting state of charge. RTE is < 1 due to losses related to thermal management, auxiliary power consumption, electrochemical losses, power conversion losses, powertrain-related electromechanical losses, energy conversion losses, self-discharge, evaporation, stored heat or gas/air leakage losses. This value for RTE losses is estimated through the cost of the additional electricity and fuel required per kWh of energy discharged due to the losses described."@en ;
+                                                       rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#single_value
+untitled-ontology-60:single_value rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#site_remediation_cost
+untitled-ontology-60:site_remediation_cost rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf untitled-ontology-60:decommissioning_cost ;
+                                           rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                           rdfs:range xsd:float ;
+                                           rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#solar_conversion_attribute
+untitled-ontology-60:solar_conversion_attribute rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:energy_conversion_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#spatial_scale
+untitled-ontology-60:spatial_scale rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                   rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                   rdfs:range xsd:string ;
+                                   untitled-ontology-60:definition "Spatial scale is a specific application of the term scale for describing or categorizing (e.g. into orders of magnitude) the size of a space (hence spatial), or the extent of it at which a phenomenon or process occurs"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#standby_loss
+untitled-ontology-60:standby_loss rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute ;
+                                  rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#storage_balance_of_system_cost
+untitled-ontology-60:storage_balance_of_system_cost rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                                    rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#storage_block_cost
+untitled-ontology-60:storage_block_cost rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                        rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "value in M.Um/kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#storage_operating_cost
+untitled-ontology-60:storage_operating_cost rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf untitled-ontology-60:energy_storage_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#storage_system_cost
+untitled-ontology-60:storage_system_cost rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                         rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                         rdfs:range xsd:float ;
+                                         rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#system_attributes
+untitled-ontology-60:system_attributes rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#system_design_type
+untitled-ontology-60:system_design_type rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:pyrolysis_convesion_attibute ;
+                                        rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                        rdfs:range [ rdf:type rdfs:Datatype ;
+                                                     owl:oneOf [ rdf:type rdf:List ;
+                                                                 rdf:first "Batch" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "Bubbling-fluidized-bed" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "Entrained-flow" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Fixed Bed" ;
+                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                             rdf:first "Rotary-klein" ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                   ] .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#system_integration_cost
+untitled-ontology-60:system_integration_cost rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:installed_cost_components ;
+                                             rdfs:domain untitled-ontology-60:EnergyStorageTechnology ;
+                                             rdfs:range xsd:float ;
+                                             rdfs:comment "value in M.U./kWh"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#technology_readiness_level
+untitled-ontology-60:technology_readiness_level rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                                rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                                rdfs:range xsd:float ;
+                                                untitled-ontology-60:abbreviation "TRL"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#temperature
+untitled-ontology-60:temperature rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf untitled-ontology-60:pyrolysis_process_control_attributes ;
+                                 rdfs:domain untitled-ontology-60:PyrolysisEnergyConversionTechnology ;
+                                 rdfs:range xsd:float ;
+                                 rdfs:comment "Value in °C"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#temperature_range
+untitled-ontology-60:temperature_range rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf untitled-ontology-60:electrolizer_attibutes ;
+                                       rdfs:domain untitled-ontology-60:ElectrolysersTechnology ;
+                                       rdfs:range xsd:float ;
+                                       rdfs:comment "range values in °C"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#temporal_resolution
+untitled-ontology-60:temporal_resolution rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#temporal_scale
+untitled-ontology-60:temporal_scale rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                    rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_horizon
+untitled-ontology-60:time_horizon rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                  rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_reference
+untitled-ontology-60:time_reference rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                    rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_series_forecasting
+untitled-ontology-60:time_series_forecasting rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_stamp
+untitled-ontology-60:time_stamp rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#time_step
+untitled-ontology-60:time_step rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#turbine_footprint
+untitled-ontology-60:turbine_footprint rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf untitled-ontology-60:wind_conversion_attribute ;
+                                       rdfs:domain untitled-ontology-60:WindEnergyTechnologyConversion ;
+                                       rdfs:range xsd:float ;
+                                       rdfs:comment "value in W/m2"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#type_of_technology
+untitled-ontology-60:type_of_technology rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf untitled-ontology-60:general_technology_attribute ;
+                                        rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                        rdfs:range [ rdf:type rdfs:Datatype ;
+                                                     owl:oneOf [ rdf:type rdf:List ;
+                                                                 rdf:first "Distribution" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "Generation" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "Storage Technology" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Transformation Technology" ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                   ] .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#unit_of_measure
+untitled-ontology-60:unit_of_measure rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf untitled-ontology-60:demand_attributes ;
+                                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#variable_operational_and_maintenance_cost_per_capacity
+untitled-ontology-60:variable_operational_and_maintenance_cost_per_capacity rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf untitled-ontology-60:operating_cost ;
+                                                                            rdfs:domain untitled-ontology-60:EnergyTechnology ;
+                                                                            rdfs:range xsd:float ;
+                                                                            rdfs:comment "value in M.U./kW-year"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#wind_conversion_attribute
+untitled-ontology-60:wind_conversion_attribute rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf untitled-ontology-60:energy_conversion_attribute .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Abletive
+untitled-ontology-60:Abletive rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdditivesAndOxygenates
+untitled-ontology-60:AdditivesAndOxygenates rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:SecundaryOil .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDIvision
+untitled-ontology-60:AdministrativeDIvision rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDivisionLevel1
+untitled-ontology-60:AdministrativeDivisionLevel1 rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:AdministrativeDIvision .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDivisionLevel2
+untitled-ontology-60:AdministrativeDivisionLevel2 rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:AdministrativeDIvision .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDivisionLevel3
+untitled-ontology-60:AdministrativeDivisionLevel3 rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:AdministrativeDIvision .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDivisionLevel4
+untitled-ontology-60:AdministrativeDivisionLevel4 rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:AdministrativeDIvision .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdministrativeDivisionLevel5
+untitled-ontology-60:AdministrativeDivisionLevel5 rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:AdministrativeDIvision .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AdsorbentHydrogenStorage
+untitled-ontology-60:AdsorbentHydrogenStorage rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SolidHydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AirSourceHeatPump
+untitled-ontology-60:AirSourceHeatPump rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:OtherRenewableEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AlkalineElectrolyzer
+untitled-ontology-60:AlkalineElectrolyzer rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:ElectrolysersTechnology ;
+                                          untitled-ontology-60:abbreviation "AEL"@en ;
+                                          rdfs:comment "Currently available on the market"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Ammonia
+untitled-ontology-60:Ammonia rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:Othernon-RenewableSecondaryEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AmmoniaStorage
+untitled-ontology-60:AmmoniaStorage rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:ChemicalFuelsStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AnimalProcessResidue
+untitled-ontology-60:AnimalProcessResidue rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:AnimalResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AnimalResidue
+untitled-ontology-60:AnimalResidue rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:PrimarySolidBiofuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AnimalResidueBiogas
+untitled-ontology-60:AnimalResidueBiogas rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:BiogasFromAnaerobicDigestion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Anthracite
+untitled-ontology-60:Anthracite rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:HardCoal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AnthropogenicEcosystem
+untitled-ontology-60:AnthropogenicEcosystem rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:Site ;
+                                            untitled-ontology-60:definition "They are substantially transformed by human activity, e.g. via wetland drainage, intensive cultivation and/or infrastructure and buildings. Key examples of such ecosystems include intensively used farmland areas, urban areas and certain forest types, such as Eucalyptus or mono-species conifer plantations. They are generally species-poor and would benefit from nature restoration."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AquiferThermalEnergyStorage
+untitled-ontology-60:AquiferThermalEnergyStorage rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:LiquidSHS ;
+                                                 untitled-ontology-60:abbreviation "ATES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Area
+untitled-ontology-60:Area rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Auger
+untitled-ontology-60:Auger rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#AviationGasoline
+untitled-ontology-60:AviationGasoline rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:Gasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BIo-ETBE
+untitled-ontology-60:BIo-ETBE rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:Biogasoline ;
+                              rdfs:comment "Ethyl tertiary-butyl ether (ETBE)"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bagasse
+untitled-ontology-60:Bagasse rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BasicOxygenSteelFurnanceGas
+untitled-ontology-60:BasicOxygenSteelFurnanceGas rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:RecoveryGases .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BatteryEnergyStorage
+untitled-ontology-60:BatteryEnergyStorage rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:ElectrochemicalStorage ;
+                                          untitled-ontology-60:abbreviation "BES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bio-DME
+untitled-ontology-60:Bio-DME rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:GasBiofuelsProducts ;
+                             untitled-ontology-60:Synonysm "Methoxymethane"@en ;
+                             rdfs:comment "Dimethyl ether (DME)"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bio-JetKerosene
+untitled-ontology-60:Bio-JetKerosene rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:PrimaryLiquidBiofuel ,
+                                                     untitled-ontology-60:SecondaryLiquidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bio-MTBE
+untitled-ontology-60:Bio-MTBE rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:Biogasoline ;
+                              rdfs:comment "Metyl tert-butyl ether (MTBE)"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BioEnergy
+untitled-ontology-60:BioEnergy rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biobuthanol
+untitled-ontology-60:Biobuthanol rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:Biogasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biodiesel
+untitled-ontology-60:Biodiesel rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:PrimaryLiquidBiofuel ,
+                                               untitled-ontology-60:SecondaryLiquidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bioethanol
+untitled-ontology-60:Bioethanol rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:Biogasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiogasFromAnaerobicDigestion
+untitled-ontology-60:BiogasFromAnaerobicDigestion rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:PrimaryGasBiofuel ,
+                                                                  untitled-ontology-60:SecondaryGasBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiogasFromThermalProcesses
+untitled-ontology-60:BiogasFromThermalProcesses rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:PrimaryGasBiofuel ,
+                                                                untitled-ontology-60:SecondaryGasBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biogasoline
+untitled-ontology-60:Biogasoline rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:PrimaryLiquidBiofuel ,
+                                                 untitled-ontology-60:SecondaryLiquidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiohazardousWaste
+untitled-ontology-60:BiohazardousWaste rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:Non-RenewableIndustrialWaste .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biohydrogen
+untitled-ontology-60:Biohydrogen rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:GasBiofuelsProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiologicalHydrigen
+untitled-ontology-60:BiologicalHydrigen rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:Biohydrogen .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiomassPelletsAndBriquettes
+untitled-ontology-60:BiomassPelletsAndBriquettes rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:SecondarySolidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiomassProcessingResidue
+untitled-ontology-60:BiomassProcessingResidue rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:PrimarySolidBiofuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biomethane
+untitled-ontology-60:Biomethane rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:GasBiofuelsProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Biomethanol
+untitled-ontology-60:Biomethanol rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:Biogasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BiothermalHydrogen
+untitled-ontology-60:BiothermalHydrogen rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:Biohydrogen .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BitominousCoal
+untitled-ontology-60:BitominousCoal rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:HardCoal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Bitumen
+untitled-ontology-60:Bitumen rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BlackLiquor
+untitled-ontology-60:BlackLiquor rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BlastFurnanceGas
+untitled-ontology-60:BlastFurnanceGas rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:RecoveryGases .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BoreholeThermalEnergyStorage
+untitled-ontology-60:BoreholeThermalEnergyStorage rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:SolidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BrownCoal
+untitled-ontology-60:BrownCoal rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:Coal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BrownCoalBriquettes
+untitled-ontology-60:BrownCoalBriquettes rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BubblingFluidizedBed
+untitled-ontology-60:BubblingFluidizedBed rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:PneumaticBedTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Building
+untitled-ontology-60:Building rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:HardInfrastructure ;
+                              untitled-ontology-60:definition "The building infrastructure refers largely to architectural space defined as single or grouped buildings formingpart of an urban block. This will include dwellings, educational buildings, healthcare buildings, among others."@en ;
+                              rdfs:comment "Related to GWR building category or building class"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CavernThermalEnergyStorage
+untitled-ontology-60:CavernThermalEnergyStorage rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:LiquidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Charcoal
+untitled-ontology-60:Charcoal rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:SecondarySolidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ChemicalFuelsStorage
+untitled-ontology-60:ChemicalFuelsStorage rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ChemicalHeat
+untitled-ontology-60:ChemicalHeat rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:OtherNon-RenewablePrimaryEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ChemicalWaste
+untitled-ontology-60:ChemicalWaste rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:Non-RenewableIndustrialWaste .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CirculatingFluidzedBEd
+untitled-ontology-60:CirculatingFluidzedBEd rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:PneumaticBedTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ClosedTCESSystem
+untitled-ontology-60:ClosedTCESSystem rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:ThermochemicalEnergyStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Coal
+untitled-ontology-60:Coal rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PrimaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Coal-BasaedHydrogen
+untitled-ontology-60:Coal-BasaedHydrogen rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:OtherCoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Coal-BasedAmmonia
+untitled-ontology-60:Coal-BasedAmmonia rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:OtherCoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CoalCoke
+untitled-ontology-60:CoalCoke rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CoalProducts
+untitled-ontology-60:CoalProducts rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:SecondaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CoalTar
+untitled-ontology-60:CoalTar rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CokeBreezer
+untitled-ontology-60:CokeBreezer rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:CoalCoke .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CokeOvenCoket
+untitled-ontology-60:CokeOvenCoket rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:CoalCoke .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CokeOvenGas
+untitled-ontology-60:CokeOvenGas rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ColumType
+untitled-ontology-60:ColumType rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:Gravity .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CompressedAirEnergyStorageSystem
+untitled-ontology-60:CompressedAirEnergyStorageSystem rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:MechanicalStorage ;
+                                                      untitled-ontology-60:abbreviation "CAES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ConcentrateSolarPower
+untitled-ontology-60:ConcentrateSolarPower rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:SolarThermalEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ConcentrateSolarWaterHeaters
+untitled-ontology-60:ConcentrateSolarWaterHeaters rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:SolarWaterHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Continent
+untitled-ontology-60:Continent rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ControlModule
+untitled-ontology-60:ControlModule rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ConventionalCruedOil
+untitled-ontology-60:ConventionalCruedOil rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:PrimaryOil .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#CookingCoal
+untitled-ontology-60:CookingCoal rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:BitominousCoal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Country
+untitled-ontology-60:Country rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#DryNaturalGAs
+untitled-ontology-60:DryNaturalGAs rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:NaturalGas .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ElectricStorage
+untitled-ontology-60:ElectricStorage rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ElectrochemicalStorage
+untitled-ontology-60:ElectrochemicalStorage rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ElectrolysersTechnology
+untitled-ontology-60:ElectrolysersTechnology rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ElectrolyticHydrogen
+untitled-ontology-60:ElectrolyticHydrogen rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:Othernon-RenewableSecondaryEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ElectromagneticStorage
+untitled-ontology-60:ElectromagneticStorage rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyCarrier
+untitled-ontology-60:EnergyCarrier rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyConversionTechnology
+untitled-ontology-60:EnergyConversionTechnology rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:EnergyTechnology ;
+                                                untitled-ontology-60:definition "Energy conversion technology refers to any system that converts energy from one form to another. Energy comes in different forms, including heat, work and motion. Moreover, potential energy can be in the form of nuclear, chemical, elastic, gravitational, or radiant energy (also known as light). All of these can be converted into useful energy, with the one of the most common and versatile forms being electricity."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyCrops
+untitled-ontology-60:EnergyCrops rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:HarvestedBiomass .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyDemand
+untitled-ontology-60:EnergyDemand rdf:type owl:Class ;
+                                  untitled-ontology-60:definition "Energy demand  correspond to the amount of energy required to satisfy individual energy needs."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyDemandProfile
+untitled-ontology-60:EnergyDemandProfile rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyEconomics
+untitled-ontology-60:EnergyEconomics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyPolicy
+untitled-ontology-60:EnergyPolicy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergySource
+untitled-ontology-60:EnergySource rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyStorageTechnology
+untitled-ontology-60:EnergyStorageTechnology rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:EnergyTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergySupply
+untitled-ontology-60:EnergySupply rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyTechnology
+untitled-ontology-60:EnergyTechnology rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EnergyUser
+untitled-ontology-60:EnergyUser rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#EquipmentModule
+untitled-ontology-60:EquipmentModule rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Ethane
+untitled-ontology-60:Ethane rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FinalEnergyDemand
+untitled-ontology-60:FinalEnergyDemand rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:EnergyDemand ;
+                                       untitled-ontology-60:definition ""@en ,
+                                                                       "Demand related to the consumer for specific use. Final energy is what a consumer buys and receives, such as electricity in their home; heating; or petrol at the fuel pump."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FixedBed
+untitled-ontology-60:FixedBed rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:PneumaticBedTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FlexibleBattery
+untitled-ontology-60:FlexibleBattery rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:ElectrochemicalStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FlowBatteryEnergyStorage
+untitled-ontology-60:FlowBatteryEnergyStorage rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:ElectrochemicalStorage ;
+                                              untitled-ontology-60:abbreviation "FBES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FlywheelEnergyStorageSystem
+untitled-ontology-60:FlywheelEnergyStorageSystem rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:MechanicalStorage ;
+                                                 untitled-ontology-60:abbreviation "FES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#FuelOil
+untitled-ontology-60:FuelOil rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasBiofuelsProducts
+untitled-ontology-60:GasBiofuelsProducts rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:SecondaryGasBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasCoke
+untitled-ontology-60:GasCoke rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:CoalCoke .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasHydrogenStorage
+untitled-ontology-60:GasHydrogenStorage rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:HydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasWorksGas
+untitled-ontology-60:GasWorksGas rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Gasoline
+untitled-ontology-60:Gasoline rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Gasoline-TypeJetFuel
+untitled-ontology-60:Gasoline-TypeJetFuel rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:Gasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GeneringWood
+untitled-ontology-60:GeneringWood rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:WoodFuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Geothermal
+untitled-ontology-60:Geothermal rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GeothermalElectricPowerGeneration
+untitled-ontology-60:GeothermalElectricPowerGeneration rdf:type owl:Class ;
+                                                       rdfs:subClassOf untitled-ontology-60:Geothermal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GeothermalHeatGeneration
+untitled-ontology-60:GeothermalHeatGeneration rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:Geothermal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GlazedCombinedSolarWaterHeater
+untitled-ontology-60:GlazedCombinedSolarWaterHeater rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:SolarWaterHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GlazedSingleSolarWaterHeater
+untitled-ontology-60:GlazedSingleSolarWaterHeater rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:SolarWaterHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Gravel-WaterThermalEnergyStorage
+untitled-ontology-60:Gravel-WaterThermalEnergyStorage rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:LiquidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Gravity
+untitled-ontology-60:Gravity rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:PyrolysisEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GravityEnergyStorageSystem
+untitled-ontology-60:GravityEnergyStorageSystem rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:MechanicalStorage ;
+                                                untitled-ontology-60:abbreviation "GES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GreenInfrastructure
+untitled-ontology-60:GreenInfrastructure rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:AnthropogenicEcosystem ;
+                                         untitled-ontology-60:definition """Green infrastructure (also sometimes called ecological infrastructure, environmental infrastructure or natural infrastructure) refers to a “strategically planned and managed network[s] of natural lands, such as forests and wetlands, working landscapes, and other open spaces that conserves or enhances ecosystem values and functions and provides associated benefits to human populations”. 
+Green infrastructure can be either naturally occurring or naturalized, but the defining feature is that it is actively managed; if it is not actively managed it is simply “nature”.
+Natural infrastructure can function on its own or be used to complement built infrastructure, and elements of natural infrastructure can be incorporated into
+the design of built infrastructure (e.g., green roofs and walls), resulting in hybrid infrastructure (also referred to as grey-green infrastructure)."""@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GroundSourceHeatPump
+untitled-ontology-60:GroundSourceHeatPump rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:OtherRenewableEnergyConversionTechnology ;
+                                          untitled-ontology-60:abbreviation "GSHPs"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Group
+untitled-ontology-60:Group rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HardCoal
+untitled-ontology-60:HardCoal rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:Coal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HardInfrastructure
+untitled-ontology-60:HardInfrastructure rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:AnthropogenicEcosystem ;
+                                        untitled-ontology-60:definition "Hard infrastructure includes physical structures or the equipment in place to support urban systems and services. For example, roads, railways, power transmission lines and bridges are some of the many examples of hard infrastructure."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HarvestedBiomass
+untitled-ontology-60:HarvestedBiomass rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:PrimarySolidBiofuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HarvestedResidues
+untitled-ontology-60:HarvestedResidues rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:PrimarySolidBiofuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HeavyGasOil
+untitled-ontology-60:HeavyGasOil rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DiselOilAndHeavyGasOil> .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HeliosFieldCollector
+untitled-ontology-60:HeliosFieldCollector rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:ConcentrateSolarPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HotWaterThermalEnergyStorage
+untitled-ontology-60:HotWaterThermalEnergyStorage rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:LiquidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Hub
+untitled-ontology-60:Hub rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HydrogenStorage
+untitled-ontology-60:HydrogenStorage rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:ChemicalFuelsStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HydrogenatedVegetableOilBiodiesel
+untitled-ontology-60:HydrogenatedVegetableOilBiodiesel rdf:type owl:Class ;
+                                                       rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Hydropower
+untitled-ontology-60:Hydropower rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:WaterEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HydropowerAndSolarPannels
+untitled-ontology-60:HydropowerAndSolarPannels rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:MixedHydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#HydropowerAndWindTurbines
+untitled-ontology-60:HydropowerAndWindTurbines rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:MixedHydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Ice-CoolThermalEnergyStorage
+untitled-ontology-60:Ice-CoolThermalEnergyStorage rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:LatentHeatStorage ;
+                                                  untitled-ontology-60:abbreviation "ITES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Kerosene
+untitled-ontology-60:Kerosene rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Kerosene-TypeJetFuel
+untitled-ontology-60:Kerosene-TypeJetFuel rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:Kerosene .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LandfillBiogas
+untitled-ontology-60:LandfillBiogas rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:BiogasFromAnaerobicDigestion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LargeSolarHomeSytem
+untitled-ontology-60:LargeSolarHomeSytem rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LatentHeatStorage
+untitled-ontology-60:LatentHeatStorage rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:ThermalStorage ;
+                                       untitled-ontology-60:abbreviation "(LHS"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Lead-AcidBattery
+untitled-ontology-60:Lead-AcidBattery rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                      untitled-ontology-60:abbreviation "LA"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Level
+untitled-ontology-60:Level rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:Area .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Lignite
+untitled-ontology-60:Lignite rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:BrownCoal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LinearFresnelReflector
+untitled-ontology-60:LinearFresnelReflector rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:ConcentrateSolarPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LiquidHydrogenStorage
+untitled-ontology-60:LiquidHydrogenStorage rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:HydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LiquidSHS
+untitled-ontology-60:LiquidSHS rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:SensibleHeatStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LiquifiedPetroleumGas
+untitled-ontology-60:LiquifiedPetroleumGas rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Lithium-IonBattery
+untitled-ontology-60:Lithium-IonBattery rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                        untitled-ontology-60:abbreviation "LI-ion"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LithiumIronPhosphateBattery
+untitled-ontology-60:LithiumIronPhosphateBattery rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:Lithium-IonBattery ;
+                                                 untitled-ontology-60:abbreviation "LFP"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LithiumNickelManganeseCobaltOxides
+untitled-ontology-60:LithiumNickelManganeseCobaltOxides rdf:type owl:Class ;
+                                                        rdfs:subClassOf untitled-ontology-60:Lithium-IonBattery ;
+                                                        untitled-ontology-60:abbreviation "NMC"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LoggingResidues
+untitled-ontology-60:LoggingResidues rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:HarvestedResidues .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Lubricants
+untitled-ontology-60:Lubricants rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#LumberWood
+untitled-ontology-60:LumberWood rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:WoodFuel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MarineEnergy
+untitled-ontology-60:MarineEnergy rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:WaterEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Mechanical
+untitled-ontology-60:Mechanical rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:PyrolysisEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MechanicalStorage
+untitled-ontology-60:MechanicalStorage rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MetalHydrideHydrogenStorage
+untitled-ontology-60:MetalHydrideHydrogenStorage rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:SolidHydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Micro_environment
+untitled-ontology-60:Micro_environment rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MicroalgaBiodiesel
+untitled-ontology-60:MicroalgaBiodiesel rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MilledPeat
+untitled-ontology-60:MilledPeat rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:Peat .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MixedHydropower
+untitled-ontology-60:MixedHydropower rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:Hydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MoltenSaltThermalEnergyStorage
+untitled-ontology-60:MoltenSaltThermalEnergyStorage rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:LiquidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#MotorGasoline
+untitled-ontology-60:MotorGasoline rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:Gasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Naphtha
+untitled-ontology-60:Naphtha rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalEcosystem
+untitled-ontology-60:NaturalEcosystem rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:Site ;
+                                      untitled-ontology-60:definition "These ecosystems include natural forests, peat bogs, high mountain habitats, oceans, lakes and rivers. They can be strongly impacted by human activities but will recover on their own if these pressures are removed."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalGAs-BasedHydrogen
+untitled-ontology-60:NaturalGAs-BasedHydrogen rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:NaturalGasProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalGas
+untitled-ontology-60:NaturalGas rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:PrimaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalGas-BasedAmmonia
+untitled-ontology-60:NaturalGas-BasedAmmonia rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:NaturalGasProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalGasProducts
+untitled-ontology-60:NaturalGasProducts rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:SecondaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NaturalLiquidsGas
+untitled-ontology-60:NaturalLiquidsGas rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:PrimaryOil .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Network
+untitled-ontology-60:Network rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Nickel-CadmiumBattery
+untitled-ontology-60:Nickel-CadmiumBattery rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                           untitled-ontology-60:abbreviation "Ni-Cd"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableAmmonia
+untitled-ontology-60:Non-BioRenewableAmmonia rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableDME
+untitled-ontology-60:Non-BioRenewableDME rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableDiesel
+untitled-ontology-60:Non-BioRenewableDiesel rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:Non-BioRenewableLiquidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableGasFuels
+untitled-ontology-60:Non-BioRenewableGasFuels rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SecondaryNon-BioRenewableFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableGasoline
+untitled-ontology-60:Non-BioRenewableGasoline rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:Non-BioRenewableLiquidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableKerosenes
+untitled-ontology-60:Non-BioRenewableKerosenes rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:Non-BioRenewableLiquidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableLiquidFuels
+untitled-ontology-60:Non-BioRenewableLiquidFuels rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:SecondaryNon-BioRenewableFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableMEthane
+untitled-ontology-60:Non-BioRenewableMEthane rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-BioRenewableSolidFuels
+untitled-ontology-60:Non-BioRenewableSolidFuels rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:SecondaryNon-BioRenewableFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-RenewableIndustrialWaste
+untitled-ontology-60:Non-RenewableIndustrialWaste rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:Non-RenewableWasteEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-RenewableMunicipalWaste
+untitled-ontology-60:Non-RenewableMunicipalWaste rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:Non-RenewableWasteEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Non-RenewableWasteEnergy
+untitled-ontology-60:Non-RenewableWasteEnergy rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:PrimaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NonBioRenewableCarbon
+untitled-ontology-60:NonBioRenewableCarbon rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:Non-BioRenewableSolidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NuclearElectricPower
+untitled-ontology-60:NuclearElectricPower rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:PrimaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#NuclearFusionFuels
+untitled-ontology-60:NuclearFusionFuels rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:NuclearElectricPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OceanCurrent
+untitled-ontology-60:OceanCurrent rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:MarineEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OffGridSolarPhotovoltaic
+untitled-ontology-60:OffGridSolarPhotovoltaic rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SolarPhotovoltaicEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OffShoreWindEnergy
+untitled-ontology-60:OffShoreWindEnergy rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:WindEnergyTechnologyConversion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Oil-BasedAmmonia
+untitled-ontology-60:Oil-BasedAmmonia rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Oil-BasedHydrogen
+untitled-ontology-60:Oil-BasedHydrogen rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OilCake
+untitled-ontology-60:OilCake rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:BiomassPelletsAndBriquettes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OilPlantResidue
+untitled-ontology-60:OilPlantResidue rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OilProdcuts
+untitled-ontology-60:OilProdcuts rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:SecundaryOil .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OnGridDistributedPhotovoltaic
+untitled-ontology-60:OnGridDistributedPhotovoltaic rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:OnGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OnGridSolarPhotovoltaic
+untitled-ontology-60:OnGridSolarPhotovoltaic rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:SolarPhotovoltaicEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OnGridUtilityScalePhotovoltaic
+untitled-ontology-60:OnGridUtilityScalePhotovoltaic rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:OnGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OnShoreWindEnergy
+untitled-ontology-60:OnShoreWindEnergy rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:WindEnergyTechnologyConversion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OpenTCESSystem
+untitled-ontology-60:OpenTCESSystem rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:ThermochemicalEnergyStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherBiodiesel
+untitled-ontology-60:OtherBiodiesel rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherBiofuelsProducts
+untitled-ontology-60:OtherBiofuelsProducts rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:GasBiofuelsProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherBiogasFromAnaerobicDigestion
+untitled-ontology-60:OtherBiogasFromAnaerobicDigestion rdf:type owl:Class ;
+                                                       rdfs:subClassOf untitled-ontology-60:BiogasFromAnaerobicDigestion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherBiogasoline
+untitled-ontology-60:OtherBiogasoline rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:Biogasoline .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherBiomassPelletsAndBriquettes
+untitled-ontology-60:OtherBiomassPelletsAndBriquettes rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:BiomassPelletsAndBriquettes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherChemicalFuelsStorage
+untitled-ontology-60:OtherChemicalFuelsStorage rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:ChemicalFuelsStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherCoalProductNotSpecified
+untitled-ontology-60:OtherCoalProductNotSpecified rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:OtherCoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherCoalProducts
+untitled-ontology-60:OtherCoalProducts rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherElectricStorage
+untitled-ontology-60:OtherElectricStorage rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:ElectricStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherElectromagneticStorage
+untitled-ontology-60:OtherElectromagneticStorage rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:ElectromagneticStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherKerosene
+untitled-ontology-60:OtherKerosene rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:Kerosene .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherMechanicalStorage
+untitled-ontology-60:OtherMechanicalStorage rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:MechanicalStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherNaturalGasProducts
+untitled-ontology-60:OtherNaturalGasProducts rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:NaturalGasProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherNon-BioRenewableGasFuels
+untitled-ontology-60:OtherNon-BioRenewableGasFuels rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherNon-BioRenewableLiquidFuels
+untitled-ontology-60:OtherNon-BioRenewableLiquidFuels rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:Non-BioRenewableLiquidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherNon-BioRenewableSolidFuels
+untitled-ontology-60:OtherNon-BioRenewableSolidFuels rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-60:Non-BioRenewableSolidFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherNon-RenewablePrimaryEnergy
+untitled-ontology-60:OtherNon-RenewablePrimaryEnergy rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-60:PrimaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherOffGridSolarPhotovoltaic
+untitled-ontology-60:OtherOffGridSolarPhotovoltaic rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherOilProducts
+untitled-ontology-60:OtherOilProducts rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherOilProductsNotSpecified
+untitled-ontology-60:OtherOilProductsNotSpecified rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherPeatProducts
+untitled-ontology-60:OtherPeatProducts rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:PeatProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherRecoveryGas
+untitled-ontology-60:OtherRecoveryGas rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:RecoveryGases .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherRenewableEnergyConversionTechnology
+untitled-ontology-60:OtherRenewableEnergyConversionTechnology rdf:type owl:Class ;
+                                                              rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherRenewableEnergyNotSpecified
+untitled-ontology-60:OtherRenewableEnergyNotSpecified rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:OtherRenewableEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherRenewablePrimaryEnergy
+untitled-ontology-60:OtherRenewablePrimaryEnergy rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherSolidBiofuels
+untitled-ontology-60:OtherSolidBiofuels rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:SecondarySolidBiofuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherSolidHydrogenStorage
+untitled-ontology-60:OtherSolidHydrogenStorage rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:SolidHydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#OtherThermalStorage
+untitled-ontology-60:OtherThermalStorage rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:ThermalStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Othernon-RenewableSecondaryEnergy
+untitled-ontology-60:Othernon-RenewableSecondaryEnergy rdf:type owl:Class ;
+                                                       rdfs:subClassOf untitled-ontology-60:SecondaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Packed-BedThermalEnergyStorage
+untitled-ontology-60:Packed-BedThermalEnergyStorage rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:SolidSHS .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PaperBattery
+untitled-ontology-60:PaperBattery rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:ElectrochemicalStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ParabolicDish
+untitled-ontology-60:ParabolicDish rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:ConcentrateSolarPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ParabolicTrough
+untitled-ontology-60:ParabolicTrough rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:ConcentrateSolarPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ParaffinWaxes
+untitled-ontology-60:ParaffinWaxes rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PatentFuel
+untitled-ontology-60:PatentFuel rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:CoalProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Peat
+untitled-ontology-60:Peat rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PrimaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Peat-BasedAmmonia
+untitled-ontology-60:Peat-BasedAmmonia rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:PeatProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Peat-BasedHydrogen
+untitled-ontology-60:Peat-BasedHydrogen rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:PeatProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PeatBriquettes
+untitled-ontology-60:PeatBriquettes rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:PeatProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PeatProducts
+untitled-ontology-60:PeatProducts rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:SecondaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PetroleumCoke
+untitled-ontology-60:PetroleumCoke rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PhaseChangeMaterialThermalEnergyStorage
+untitled-ontology-60:PhaseChangeMaterialThermalEnergyStorage rdf:type owl:Class ;
+                                                             rdfs:subClassOf untitled-ontology-60:LatentHeatStorage ;
+                                                             untitled-ontology-60:abbreviation "PCM-TES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PhysicalGeographicLocation
+untitled-ontology-60:PhysicalGeographicLocation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PlantHusks
+untitled-ontology-60:PlantHusks rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PlantShells
+untitled-ontology-60:PlantShells rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Plasma
+untitled-ontology-60:Plasma rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PneumaticBedTechnology
+untitled-ontology-60:PneumaticBedTechnology rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:PyrolysisEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PolysulfideBromideFlowBattery
+untitled-ontology-60:PolysulfideBromideFlowBattery rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:FlowBatteryEnergyStorage ;
+                                                   untitled-ontology-60:abbreviation "(PSB)"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PotentialRange30_100kW
+untitled-ontology-60:PotentialRange30_100kW rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:OnGridDistributedPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PotentialRangeLess30kW
+untitled-ontology-60:PotentialRangeLess30kW rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:OnGridDistributedPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryEnergyDemand
+untitled-ontology-60:PrimaryEnergyDemand rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:EnergyDemand ;
+                                         untitled-ontology-60:definition "Demand for available as energy resources – such as the fuels that are burnt in power plants –  before it has been transformed. This relates to the coal before it has been burned; the uranium; or the barrels of oil."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryFosilFuelSource
+untitled-ontology-60:PrimaryFosilFuelSource rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:PrimaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryGasBiofuel
+untitled-ontology-60:PrimaryGasBiofuel rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:BioEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryLiquidBiofuel
+untitled-ontology-60:PrimaryLiquidBiofuel rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:BioEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryNon-RenewableEnergy
+untitled-ontology-60:PrimaryNon-RenewableEnergy rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:PrimarySourceOfEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryOil
+untitled-ontology-60:PrimaryOil rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:PrimaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryRenewableWaste
+untitled-ontology-60:PrimaryRenewableWaste rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:BioEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimaryRenewableyEnergy
+untitled-ontology-60:PrimaryRenewableyEnergy rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:PrimarySourceOfEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimarySolidBiofuel
+untitled-ontology-60:PrimarySolidBiofuel rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:BioEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PrimarySourceOfEnergy
+untitled-ontology-60:PrimarySourceOfEnergy rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:EnergySource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ProcessCell
+untitled-ontology-60:ProcessCell rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ProtonExchangeMembraneElectrolyzer
+untitled-ontology-60:ProtonExchangeMembraneElectrolyzer rdf:type owl:Class ;
+                                                        rdfs:subClassOf untitled-ontology-60:ElectrolysersTechnology ;
+                                                        untitled-ontology-60:abbreviation "PEMEL"@en ;
+                                                        rdfs:comment "Iin the development stage"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PumpedHydro
+untitled-ontology-60:PumpedHydro rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:MixedHydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PumpedHydroEnergyStorageSystem
+untitled-ontology-60:PumpedHydroEnergyStorageSystem rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:MechanicalStorage ;
+                                                    untitled-ontology-60:abbreviation "PHES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PumpedThermalEnergyStorage
+untitled-ontology-60:PumpedThermalEnergyStorage rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:ThermalStorage ;
+                                                untitled-ontology-60:abbreviation "PTES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PureHydropower
+untitled-ontology-60:PureHydropower rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:Hydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#PyrolysisEnergyConversionTechnology
+untitled-ontology-60:PyrolysisEnergyConversionTechnology rdf:type owl:Class ;
+                                                         rdfs:subClassOf untitled-ontology-60:WasteToEnergyTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RecoveryGases
+untitled-ontology-60:RecoveryGases rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:SecondaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RefinaryFeedstock
+untitled-ontology-60:RefinaryFeedstock rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:SecundaryOil .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RefineryGas
+untitled-ontology-60:RefineryGas rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RenewableElectroliticHydrogen
+untitled-ontology-60:RenewableElectroliticHydrogen rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RenewableIndustrialWaste
+untitled-ontology-60:RenewableIndustrialWaste rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:PrimaryRenewableWaste .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RenewableMunicipalWaste
+untitled-ontology-60:RenewableMunicipalWaste rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:PrimaryRenewableWaste .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RenewablePhotovoltaicHydrogen
+untitled-ontology-60:RenewablePhotovoltaicHydrogen rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RenewableThermolyticHydrogen
+untitled-ontology-60:RenewableThermolyticHydrogen rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:Non-BioRenewableGasFuels .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ReservoirHydropower
+untitled-ontology-60:ReservoirHydropower rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:PureHydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Room
+untitled-ontology-60:Room rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RotatingCone
+untitled-ontology-60:RotatingCone rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#RunOffRiverHydropower
+untitled-ontology-60:RunOffRiverHydropower rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-60:PureHydropower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SalinityGradient
+untitled-ontology-60:SalinityGradient rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:MarineEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Scenario
+untitled-ontology-60:Scenario rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryBionenergy
+untitled-ontology-60:SecondaryBionenergy rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:SecondaryRenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryEnergyDeman
+untitled-ontology-60:SecondaryEnergyDeman rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:EnergyDemand ;
+                                          untitled-ontology-60:definition "Demand of energy resulting from the conversion of  primary energy into a transportable form of energy. Secondary energy includes liquid fuels (such as gasoline and diesel – which are refined oil), electricity, and heat"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryFosilFuelSource
+untitled-ontology-60:SecondaryFosilFuelSource rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SecondaryNon-RenewableEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryGasBiofuels
+untitled-ontology-60:SecondaryGasBiofuels rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:SecondaryBionenergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryLiquidBiofuels
+untitled-ontology-60:SecondaryLiquidBiofuels rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:SecondaryBionenergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryNon-BioRenewableFuels
+untitled-ontology-60:SecondaryNon-BioRenewableFuels rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:SecondaryBionenergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryNon-RenewableEnergy
+untitled-ontology-60:SecondaryNon-RenewableEnergy rdf:type owl:Class ;
+                                                  rdfs:subClassOf untitled-ontology-60:SecondarySourceOfEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondaryRenewableEnergy
+untitled-ontology-60:SecondaryRenewableEnergy rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SecondarySourceOfEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondarySolidBiofuels
+untitled-ontology-60:SecondarySolidBiofuels rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:SecondaryBionenergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecondarySourceOfEnergy
+untitled-ontology-60:SecondarySourceOfEnergy rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:EnergySource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Section
+untitled-ontology-60:Section rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SecundaryOil
+untitled-ontology-60:SecundaryOil rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-60:SecondaryFosilFuelSource .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SemiCokes
+untitled-ontology-60:SemiCokes rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-60:CoalCoke .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SemiNaturalEcosystem
+untitled-ontology-60:SemiNaturalEcosystem rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:Site ;
+                                          untitled-ontology-60:definition "They have been created by human land use over the last 10,000 years or so, mainly via different types of livestock grazing and biomass harvesting. They include habitats such as lowland hay meadows, heathlands or steppic grasslands. Nearly all semi-natural ecosystems depend on a continuation of traditional, extensive land use."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SensibleHeatStorage
+untitled-ontology-60:SensibleHeatStorage rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:ThermalStorage ;
+                                         untitled-ontology-60:abbreviation "SHS"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Site
+untitled-ontology-60:Site rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SmallSolarHomeSystem
+untitled-ontology-60:SmallSolarHomeSystem rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SocialAspect
+untitled-ontology-60:SocialAspect rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SodPeat
+untitled-ontology-60:SodPeat rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:Peat .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SodiumIonBattery
+untitled-ontology-60:SodiumIonBattery rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                      untitled-ontology-60:abbreviation "Na-ion"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SodiumSulphurBattery
+untitled-ontology-60:SodiumSulphurBattery rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                          untitled-ontology-60:abbreviation "NaS"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SoftInfrastructure
+untitled-ontology-60:SoftInfrastructure rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:AnthropogenicEcosystem ;
+                                        untitled-ontology-60:definition "Soft infrastructure refers to institutions that contribute to maintaining economic, social and cultural standards. Examples could include the education system, healthcare and law enforcement."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Solar
+untitled-ontology-60:Solar rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarAirForcedConventionHeating
+untitled-ontology-60:SolarAirForcedConventionHeating rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-60:SolarAirHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarAirHeating
+untitled-ontology-60:SolarAirHeating rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:SolarThermalEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarAirNaturalConventionHeating
+untitled-ontology-60:SolarAirNaturalConventionHeating rdf:type owl:Class ;
+                                                      rdfs:subClassOf untitled-ontology-60:SolarAirHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarAirRadiationHeating
+untitled-ontology-60:SolarAirRadiationHeating rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SolarAirHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarEnergyConversionTechnology
+untitled-ontology-60:SolarEnergyConversionTechnology rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarFuels
+untitled-ontology-60:SolarFuels rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:ChemicalFuelsStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarLights
+untitled-ontology-60:SolarLights rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarMiniGrids
+untitled-ontology-60:SolarMiniGrids rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarPhotovoltaicEnergy
+untitled-ontology-60:SolarPhotovoltaicEnergy rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:SolarEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarStreetLamps
+untitled-ontology-60:SolarStreetLamps rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarTelecomTowers
+untitled-ontology-60:SolarTelecomTowers rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarThermalEnergy
+untitled-ontology-60:SolarThermalEnergy rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:SolarEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarWaterHeating
+untitled-ontology-60:SolarWaterHeating rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:SolarThermalEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolarWaterPumps
+untitled-ontology-60:SolarWaterPumps rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:OffGridSolarPhotovoltaic .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Solid-StateBattery
+untitled-ontology-60:Solid-StateBattery rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage ;
+                                        untitled-ontology-60:abbreviation "SSBs"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolidHydrogenStorage
+untitled-ontology-60:SolidHydrogenStorage rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:HydrogenStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolidOxideElectrolyzer
+untitled-ontology-60:SolidOxideElectrolyzer rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:ElectrolysersTechnology ;
+                                            untitled-ontology-60:abbreviation "SOEL"@en ;
+                                            rdfs:comment "Still in the research/demonstration stage"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolidSHS
+untitled-ontology-60:SolidSHS rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:SensibleHeatStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SolidWoodProcessing
+untitled-ontology-60:SolidWoodProcessing rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:BiomassProcessingResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#StraightVegetableOil
+untitled-ontology-60:StraightVegetableOil rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Straw
+untitled-ontology-60:Straw rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:HarvestedResidues .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Sub-BitominousCoal
+untitled-ontology-60:Sub-BitominousCoal rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:BrownCoal .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Sub-system
+untitled-ontology-60:Sub-system rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:Section .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SubmersibleSolarWaterPumps
+untitled-ontology-60:SubmersibleSolarWaterPumps rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-60:SolarWaterPumps .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Super-Capacitor
+untitled-ontology-60:Super-Capacitor rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:ElectricStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SuperconductingMagneticStorage
+untitled-ontology-60:SuperconductingMagneticStorage rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:ElectromagneticStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SurfaceSolarWaterPumps
+untitled-ontology-60:SurfaceSolarWaterPumps rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:SolarWaterPumps .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#SynteticNaturalGas
+untitled-ontology-60:SynteticNaturalGas rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:ChemicalFuelsStorage ;
+                                        untitled-ontology-60:abbreviation "SNG"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ThermalGradient
+untitled-ontology-60:ThermalGradient rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:MarineEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ThermalProcessBiodiesel
+untitled-ontology-60:ThermalProcessBiodiesel rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ThermalStorage
+untitled-ontology-60:ThermalStorage rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-60:EnergyStorageTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ThermochemicalEnergyStorage
+untitled-ontology-60:ThermochemicalEnergyStorage rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-60:ThermalStorage ;
+                                                 untitled-ontology-60:abbreviation "TCES"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ThermolycHydrogen
+untitled-ontology-60:ThermolycHydrogen rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-60:Othernon-RenewableSecondaryEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#TidalEnergy
+untitled-ontology-60:TidalEnergy rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:MarineEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#TransesterifieldBiodiesel
+untitled-ontology-60:TransesterifieldBiodiesel rdf:type owl:Class ;
+                                               rdfs:subClassOf untitled-ontology-60:Biodiesel .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#TyresWaste
+untitled-ontology-60:TyresWaste rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:Non-RenewableIndustrialWaste .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#UnglazedSolarWaterHeater
+untitled-ontology-60:UnglazedSolarWaterHeater rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:SolarWaterHeating .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Unit
+untitled-ontology-60:Unit rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PhysicalGeographicLocation .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#UraniumAndPlutonium
+untitled-ontology-60:UraniumAndPlutonium rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:NuclearElectricPower .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#UrbanSpace
+untitled-ontology-60:UrbanSpace rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:HardInfrastructure ;
+                                untitled-ontology-60:definition "Urban space is considered largely as boundedspace, in the form of streets, urban plazas or local squares,playgrounds, parks and so on. Urban space is typically identifiable at the neighbourhood scale or district scale, dependingon the nature of the open space and pattern of land ownership."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Utility
+untitled-ontology-60:Utility rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-60:HardInfrastructure ;
+                             untitled-ontology-60:definition "Utilities refer to physical services such as transportation, water and waste systems, information and communications technology (ICT), etc. These utilities connectand operate equally across all urban scales, including nationaland international interconnectivity."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#VacuumMicrowave
+untitled-ontology-60:VacuumMicrowave rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#VanadiumRedoxFlowBattery
+untitled-ontology-60:VanadiumRedoxFlowBattery rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:FlowBatteryEnergyStorage ;
+                                              untitled-ontology-60:abbreviation "RFBs"@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#VegetableResidueBiogas
+untitled-ontology-60:VegetableResidueBiogas rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:BiogasFromAnaerobicDigestion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WasteToEnergyTechnology
+untitled-ontology-60:WasteToEnergyTechnology rdf:type owl:Class ;
+                                             rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology ;
+                                             untitled-ontology-60:Synonysm """Incinarator
+Combustion Facility"""@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WastewaterSludgeBiogas
+untitled-ontology-60:WastewaterSludgeBiogas rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-60:BiogasFromAnaerobicDigestion .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Water
+untitled-ontology-60:Water rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WaterEnergyConversionTechnology
+untitled-ontology-60:WaterEnergyConversionTechnology rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WaterSourceHeatPump
+untitled-ontology-60:WaterSourceHeatPump rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-60:OtherRenewableEnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WaveEnergy
+untitled-ontology-60:WaveEnergy rdf:type owl:Class ;
+                                rdfs:subClassOf untitled-ontology-60:MarineEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WetNaturalGas
+untitled-ontology-60:WetNaturalGas rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-60:NaturalGas .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WhiteSpirit
+untitled-ontology-60:WhiteSpirit rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:OtherOilProducts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Wind
+untitled-ontology-60:Wind rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:PrimaryRenewableyEnergy .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WindEnergyTechnologyConversion
+untitled-ontology-60:WindEnergyTechnologyConversion rdf:type owl:Class ;
+                                                    rdfs:subClassOf untitled-ontology-60:EnergyConversionTechnology .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Wing
+untitled-ontology-60:Wing rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-60:Area ;
+                          untitled-ontology-60:definition "A wing is part of a building – or any feature of a building – that is subordinate to the main, central structure. The individual wings may directly adjoin the main building or may be built separately and joined to it by a connecting structure such as a colonnade or pergola."@en .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WithStirrer
+untitled-ontology-60:WithStirrer rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-60:Mechanical .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WoodFuel
+untitled-ontology-60:WoodFuel rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-60:HarvestedBiomass .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#WoodPelletsAndBriquettes
+untitled-ontology-60:WoodPelletsAndBriquettes rdf:type owl:Class ;
+                                              rdfs:subClassOf untitled-ontology-60:BiomassPelletsAndBriquettes .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Zinc-CeriumBattery
+untitled-ontology-60:Zinc-CeriumBattery rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-60:FlowBatteryEnergyStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#ZincAirBattery
+untitled-ontology-60:ZincAirBattery rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Metal–AirBattery> .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DieselOil
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DieselOil> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DiselOilAndHeavyGasOil> .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DiselOilAndHeavyGasOil
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#GasOil/DiselOilAndHeavyGasOil> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf untitled-ontology-60:OilProdcuts .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Manuere/Dung
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Manuere/Dung> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf untitled-ontology-60:AnimalResidue .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Metal–AirBattery
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Metal–AirBattery> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf untitled-ontology-60:BatteryEnergyStorage .
+
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Zinc‐BromineFlowBattery
+<http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#Zinc‐BromineFlowBattery> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf untitled-ontology-60:FlowBatteryEnergyStorage .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#BuildingPregasonnaDemand
+untitled-ontology-60:BuildingPregasonnaDemand rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
