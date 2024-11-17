@@ -1,0 +1,5164 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60">
+    <Prefix name="" IRI="http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-60" IRI="http://www.semanticweb.org/mued/ontologies/2024/9/untitled-ontology-60#"/>
+    <Declaration>
+        <Class IRI="#Abletive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdditivesAndOxygenates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDIvision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDivisionLevel1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDivisionLevel2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDivisionLevel3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDivisionLevel4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrativeDivisionLevel5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdsorbentHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirSourceHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlkalineElectrolyzer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ammonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmmoniaStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalProcessResidue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalResidue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalResidueBiogas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anthracite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnthropogenicEcosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AquiferThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Auger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AviationGasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BIo-ETBE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bagasse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BasicOxygenSteelFurnanceGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bio-DME"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bio-JetKerosene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bio-MTBE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biobuthanol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bioethanol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiogasFromThermalProcesses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biogasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiohazardousWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biohydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalHydrigen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiomassPelletsAndBriquettes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biomethane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biomethanol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiothermalHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitominousCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bitumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackLiquor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlastFurnanceGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoreholeThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrownCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrownCoalBriquettes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BubblingFluidizedBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CavernThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charcoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalHeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CirculatingFluidzedBEd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClosedTCESSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coal-BasaedHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coal-BasedAmmonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoalCoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoalProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoalTar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CokeBreezer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CokeOvenCoket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CokeOvenGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColumType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompressedAirEnergyStorageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcentrateSolarPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcentrateSolarWaterHeaters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConventionalCruedOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryNaturalGAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectrochemicalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectrolyticHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectromagneticStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyCrops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyDemand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyDemandProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyEconomics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergySupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinalEnergyDemand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedBed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlexibleBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlywheelEnergyStorageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FuelOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBiofuelsProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasCoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasWorksGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gasoline-TypeJetFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneringWood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geothermal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeothermalElectricPowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeothermalHeatGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlazedCombinedSolarWaterHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlazedSingleSolarWaterHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gravel-WaterThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gravity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GravityEnergyStorageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroundSourceHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HarvestedBiomass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HarvestedResidues"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeavyGasOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeliosFieldCollector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotWaterThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrogenatedVegetableOilBiodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydropower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydropowerAndSolarPannels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydropowerAndWindTurbines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ice-CoolThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kerosene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kerosene-TypeJetFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandfillBiogas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LargeSolarHomeSytem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatentHeatStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lead-AcidBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lignite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinearFresnelReflector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidSHS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquifiedPetroleumGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lithium-IonBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LithiumIronPhosphateBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LithiumNickelManganeseCobaltOxides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoggingResidues"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lubricants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LumberWood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarineEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetalHydrideHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Micro_environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicroalgaBiodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilledPeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixedHydropower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoltenSaltThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorGasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Naphtha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalEcosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGAs-BasedHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGas-BasedAmmonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGasProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalLiquidsGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nickel-CadmiumBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableAmmonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableDME"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableDiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableGasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableKerosenes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableMEthane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-BioRenewableSolidFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-RenewableIndustrialWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-RenewableMunicipalWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-RenewableWasteEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonBioRenewableCarbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NuclearElectricPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NuclearFusionFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OceanCurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffShoreWindEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oil-BasedAmmonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oil-BasedHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OilCake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OilPlantResidue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OilProdcuts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnGridDistributedPhotovoltaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnGridSolarPhotovoltaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnGridUtilityScalePhotovoltaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnShoreWindEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenTCESSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherBiodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherBiofuelsProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherBiogasFromAnaerobicDigestion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherBiogasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherBiomassPelletsAndBriquettes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherChemicalFuelsStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherCoalProductNotSpecified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherCoalProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherElectricStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherElectromagneticStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherKerosene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherMechanicalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherNaturalGasProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherNon-BioRenewableGasFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherNon-BioRenewableLiquidFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherNon-BioRenewableSolidFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherNon-RenewablePrimaryEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherOffGridSolarPhotovoltaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherOilProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherOilProductsNotSpecified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherPeatProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRecoveryGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRenewableEnergyNotSpecified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRenewablePrimaryEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherSolidBiofuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherSolidHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherThermalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Othernon-RenewableSecondaryEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Packed-BedThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaperBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParabolicDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParabolicTrough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParaffinWaxes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatentFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peat-BasedAmmonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peat-BasedHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeatBriquettes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeatProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetroleumCoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhaseChangeMaterialThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantHusks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantShells"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plasma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PneumaticBedTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolysulfideBromideFlowBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotentialRange30_100kW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotentialRangeLess30kW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryEnergyDemand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryGasBiofuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryLiquidBiofuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryRenewableWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimarySourceOfEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessCell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtonExchangeMembraneElectrolyzer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PumpedHydro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PumpedHydroEnergyStorageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PumpedThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PureHydropower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecoveryGases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefinaryFeedstock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefineryGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewableElectroliticHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewableIndustrialWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewableMunicipalWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewablePhotovoltaicHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenewableThermolyticHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReservoirHydropower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotatingCone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RunOffRiverHydropower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalinityGradient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryBionenergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryEnergyDeman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryGasBiofuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryNon-BioRenewableFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryNon-RenewableEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryRenewableEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondarySolidBiofuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondarySourceOfEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecundaryOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiCokes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiNaturalEcosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensibleHeatStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallSolarHomeSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialAspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SodPeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SodiumIonBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SodiumSulphurBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarAirForcedConventionHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarAirHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarAirNaturalConventionHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarAirRadiationHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarEnergyConversionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarLights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarMiniGrids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarPhotovoltaicEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarStreetLamps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarTelecomTowers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarThermalEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarWaterHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarWaterPumps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solid-StateBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidHydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidOxideElectrolyzer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidSHS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidWoodProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StraightVegetableOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Straw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sub-BitominousCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sub-system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmersibleSolarWaterPumps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Super-Capacitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperconductingMagneticStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceSolarWaterPumps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SynteticNaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalGradient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalProcessBiodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermochemicalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermolycHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidalEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransesterifieldBiodiesel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TyresWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnglazedSolarWaterHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UraniumAndPlutonium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VacuumMicrowave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VanadiumRedoxFlowBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetableResidueBiogas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteToEnergyTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WastewaterSludgeBiogas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterEnergyConversionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterSourceHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaveEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetNaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteSpirit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WithStirrer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WoodFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WoodPelletsAndBriquettes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zinc-CeriumBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZincAirBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasOil/DieselOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasOil/DiselOilAndHeavyGasOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manuere/Dung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal–AirBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zinc‐BromineFlowBattery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#demandsSourceOfEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disposesEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#energyCarrierProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnergyDemandProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnergyTechnology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedstockBiomass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFinalProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMainInputEnergyCarrier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMainOutputEnergyCarrier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBasedOnScenario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedToEnergyUseSector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedToEnergyCarrier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedToEnergyUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#technologyRelations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CO2_emission_per_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CO2_emissions_per_kWh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CO2_intensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CO2_intensity_per_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ambient_atmosphere"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capital_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#charging_efficiency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#control_and_communication_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#conversion_cost_operational_and_maintenance_per_energy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#conversion_efficiency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#conversion_efficiency_per_time_step"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coupled_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#current_state_of_charge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#curtailment_factor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cut_in_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cut_off_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#decommissioning_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#demand_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#demand_calculation_model"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disassembly_or_removal_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#discharging_efficiency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disconnection_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#downstream_production_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ecconomic_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#efficiency_in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#efficiency_out"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_carrier_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_carrier_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_consumption"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_technology_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energy_use_sector_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#engineerings_procurement_and_construction_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#environmental_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#export_price_per_kWh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fixed_operational_and_maintenance_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flow_rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grid_integration_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#heat_rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#heating_supply_system_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#import_cost_per_kWh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#installed_capital_price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#installed_cost_components"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#insurance_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lifecycle_C02_emmissions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lifetime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lifetime_of_stack"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lifetime_of_system"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_capacity_per_installation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_charging_rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_discharging_rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_export_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_export_capacity_per_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_import_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_import_capacity_per_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_ramping_down"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_ramping_up"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_state_of_charge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_total_energy_output"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum_value_for_annual_import"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_capacity_per_installation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_capacity_per_technology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_import_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_import_capacity_per_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_state_of_charge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_total_energy_output"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum_value_for_annual_import"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nominal_wind_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operating_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#particle_density"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#patrticle_size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#physical_resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#power_equipment_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pre_installed_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pre_installed_remaining_lifetime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preprocessing_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pressure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pressure_range"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#process_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#project_development-cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rated_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#recycling_or_disposal_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#residence_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rotor_area"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#round-trip_efficiency_losses_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#single_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#site_remediation_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#solar_conversion_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spatial_scale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#standby_loss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storage_balance_of_system_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storage_block_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storage_operating_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storage_system_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#system_attributes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#system_design_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#system_integration_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#technology_readiness_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature_range"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temporal_resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temporal_scale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_horizon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_series_forecasting"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_stamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_step"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#turbine_footprint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_of_technology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unit_of_measure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#variable_operational_and_maintenance_cost_per_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuildingPregasonnaDemand"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Synonysm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#abbreviation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abletive"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdditivesAndOxygenates"/>
+        <Class IRI="#SecundaryOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDIvision"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDivisionLevel1"/>
+        <Class IRI="#AdministrativeDIvision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDivisionLevel2"/>
+        <Class IRI="#AdministrativeDIvision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDivisionLevel3"/>
+        <Class IRI="#AdministrativeDIvision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDivisionLevel4"/>
+        <Class IRI="#AdministrativeDIvision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrativeDivisionLevel5"/>
+        <Class IRI="#AdministrativeDIvision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdsorbentHydrogenStorage"/>
+        <Class IRI="#SolidHydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirSourceHeatPump"/>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlkalineElectrolyzer"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ammonia"/>
+        <Class IRI="#Othernon-RenewableSecondaryEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmmoniaStorage"/>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalProcessResidue"/>
+        <Class IRI="#AnimalResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalResidue"/>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalResidueBiogas"/>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anthracite"/>
+        <Class IRI="#HardCoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnthropogenicEcosystem"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AquiferThermalEnergyStorage"/>
+        <Class IRI="#LiquidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auger"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AviationGasoline"/>
+        <Class IRI="#Gasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BIo-ETBE"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bagasse"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasicOxygenSteelFurnanceGas"/>
+        <Class IRI="#RecoveryGases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BatteryEnergyStorage"/>
+        <Class IRI="#ElectrochemicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bio-DME"/>
+        <Class IRI="#GasBiofuelsProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bio-JetKerosene"/>
+        <Class IRI="#PrimaryLiquidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bio-JetKerosene"/>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bio-MTBE"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioEnergy"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biobuthanol"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biodiesel"/>
+        <Class IRI="#PrimaryLiquidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biodiesel"/>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bioethanol"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+        <Class IRI="#PrimaryGasBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+        <Class IRI="#SecondaryGasBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiogasFromThermalProcesses"/>
+        <Class IRI="#PrimaryGasBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiogasFromThermalProcesses"/>
+        <Class IRI="#SecondaryGasBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biogasoline"/>
+        <Class IRI="#PrimaryLiquidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biogasoline"/>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiohazardousWaste"/>
+        <Class IRI="#Non-RenewableIndustrialWaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biohydrogen"/>
+        <Class IRI="#GasBiofuelsProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalHydrigen"/>
+        <Class IRI="#Biohydrogen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiomassPelletsAndBriquettes"/>
+        <Class IRI="#SecondarySolidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiomassProcessingResidue"/>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biomethane"/>
+        <Class IRI="#GasBiofuelsProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biomethanol"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiothermalHydrogen"/>
+        <Class IRI="#Biohydrogen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitominousCoal"/>
+        <Class IRI="#HardCoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bitumen"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackLiquor"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlastFurnanceGas"/>
+        <Class IRI="#RecoveryGases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoreholeThermalEnergyStorage"/>
+        <Class IRI="#SolidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrownCoal"/>
+        <Class IRI="#Coal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrownCoalBriquettes"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BubblingFluidizedBed"/>
+        <Class IRI="#PneumaticBedTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#HardInfrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CavernThermalEnergyStorage"/>
+        <Class IRI="#LiquidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charcoal"/>
+        <Class IRI="#SecondarySolidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalFuelsStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalHeat"/>
+        <Class IRI="#OtherNon-RenewablePrimaryEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalWaste"/>
+        <Class IRI="#Non-RenewableIndustrialWaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CirculatingFluidzedBEd"/>
+        <Class IRI="#PneumaticBedTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosedTCESSystem"/>
+        <Class IRI="#ThermochemicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal"/>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal-BasaedHydrogen"/>
+        <Class IRI="#OtherCoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal-BasedAmmonia"/>
+        <Class IRI="#OtherCoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalCoke"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalProducts"/>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalTar"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CokeBreezer"/>
+        <Class IRI="#CoalCoke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CokeOvenCoket"/>
+        <Class IRI="#CoalCoke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CokeOvenGas"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColumType"/>
+        <Class IRI="#Gravity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorageSystem"/>
+        <Class IRI="#MechanicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcentrateSolarPower"/>
+        <Class IRI="#SolarThermalEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcentrateSolarWaterHeaters"/>
+        <Class IRI="#SolarWaterHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlModule"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConventionalCruedOil"/>
+        <Class IRI="#PrimaryOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookingCoal"/>
+        <Class IRI="#BitominousCoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryNaturalGAs"/>
+        <Class IRI="#NaturalGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectrochemicalStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectrolysersTechnology"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectrolyticHydrogen"/>
+        <Class IRI="#Othernon-RenewableSecondaryEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectromagneticStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyConversionTechnology"/>
+        <Class IRI="#EnergyTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyCrops"/>
+        <Class IRI="#HarvestedBiomass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyStorageTechnology"/>
+        <Class IRI="#EnergyTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipmentModule"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethane"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinalEnergyDemand"/>
+        <Class IRI="#EnergyDemand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedBed"/>
+        <Class IRI="#PneumaticBedTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleBattery"/>
+        <Class IRI="#ElectrochemicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+        <Class IRI="#ElectrochemicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorageSystem"/>
+        <Class IRI="#MechanicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FuelOil"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBiofuelsProducts"/>
+        <Class IRI="#SecondaryGasBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasCoke"/>
+        <Class IRI="#CoalCoke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasHydrogenStorage"/>
+        <Class IRI="#HydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasWorksGas"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gasoline"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gasoline-TypeJetFuel"/>
+        <Class IRI="#Gasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneringWood"/>
+        <Class IRI="#WoodFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geothermal"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeothermalElectricPowerGeneration"/>
+        <Class IRI="#Geothermal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeothermalHeatGeneration"/>
+        <Class IRI="#Geothermal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlazedCombinedSolarWaterHeater"/>
+        <Class IRI="#SolarWaterHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlazedSingleSolarWaterHeater"/>
+        <Class IRI="#SolarWaterHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gravel-WaterThermalEnergyStorage"/>
+        <Class IRI="#LiquidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gravity"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GravityEnergyStorageSystem"/>
+        <Class IRI="#MechanicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenInfrastructure"/>
+        <Class IRI="#AnthropogenicEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroundSourceHeatPump"/>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardCoal"/>
+        <Class IRI="#Coal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardInfrastructure"/>
+        <Class IRI="#AnthropogenicEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarvestedBiomass"/>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarvestedResidues"/>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeavyGasOil"/>
+        <Class IRI="#GasOil/DiselOilAndHeavyGasOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeliosFieldCollector"/>
+        <Class IRI="#ConcentrateSolarPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterThermalEnergyStorage"/>
+        <Class IRI="#LiquidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hub"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenatedVegetableOilBiodiesel"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydropower"/>
+        <Class IRI="#WaterEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydropowerAndSolarPannels"/>
+        <Class IRI="#MixedHydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydropowerAndWindTurbines"/>
+        <Class IRI="#MixedHydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ice-CoolThermalEnergyStorage"/>
+        <Class IRI="#LatentHeatStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kerosene"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kerosene-TypeJetFuel"/>
+        <Class IRI="#Kerosene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandfillBiogas"/>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargeSolarHomeSytem"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatentHeatStorage"/>
+        <Class IRI="#ThermalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lead-AcidBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Level"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lignite"/>
+        <Class IRI="#BrownCoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinearFresnelReflector"/>
+        <Class IRI="#ConcentrateSolarPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidHydrogenStorage"/>
+        <Class IRI="#HydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidSHS"/>
+        <Class IRI="#SensibleHeatStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquifiedPetroleumGas"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lithium-IonBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIronPhosphateBattery"/>
+        <Class IRI="#Lithium-IonBattery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumNickelManganeseCobaltOxides"/>
+        <Class IRI="#Lithium-IonBattery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoggingResidues"/>
+        <Class IRI="#HarvestedResidues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lubricants"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LumberWood"/>
+        <Class IRI="#WoodFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarineEnergy"/>
+        <Class IRI="#WaterEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanical"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetalHydrideHydrogenStorage"/>
+        <Class IRI="#SolidHydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Micro_environment"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicroalgaBiodiesel"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilledPeat"/>
+        <Class IRI="#Peat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixedHydropower"/>
+        <Class IRI="#Hydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltThermalEnergyStorage"/>
+        <Class IRI="#LiquidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorGasoline"/>
+        <Class IRI="#Gasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Naphtha"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalEcosystem"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGAs-BasedHydrogen"/>
+        <Class IRI="#NaturalGasProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGas"/>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGas-BasedAmmonia"/>
+        <Class IRI="#NaturalGasProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGasProducts"/>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalLiquidsGas"/>
+        <Class IRI="#PrimaryOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nickel-CadmiumBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableAmmonia"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableDME"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableDiesel"/>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+        <Class IRI="#SecondaryNon-BioRenewableFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableGasoline"/>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableKerosenes"/>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+        <Class IRI="#SecondaryNon-BioRenewableFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableMEthane"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-BioRenewableSolidFuels"/>
+        <Class IRI="#SecondaryNon-BioRenewableFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-RenewableIndustrialWaste"/>
+        <Class IRI="#Non-RenewableWasteEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-RenewableMunicipalWaste"/>
+        <Class IRI="#Non-RenewableWasteEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-RenewableWasteEnergy"/>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonBioRenewableCarbon"/>
+        <Class IRI="#Non-BioRenewableSolidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NuclearElectricPower"/>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NuclearFusionFuels"/>
+        <Class IRI="#NuclearElectricPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OceanCurrent"/>
+        <Class IRI="#MarineEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+        <Class IRI="#SolarPhotovoltaicEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffShoreWindEnergy"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil-BasedAmmonia"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil-BasedHydrogen"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OilCake"/>
+        <Class IRI="#BiomassPelletsAndBriquettes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OilPlantResidue"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OilProdcuts"/>
+        <Class IRI="#SecundaryOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnGridDistributedPhotovoltaic"/>
+        <Class IRI="#OnGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnGridSolarPhotovoltaic"/>
+        <Class IRI="#SolarPhotovoltaicEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnGridUtilityScalePhotovoltaic"/>
+        <Class IRI="#OnGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnShoreWindEnergy"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenTCESSystem"/>
+        <Class IRI="#ThermochemicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherBiodiesel"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherBiofuelsProducts"/>
+        <Class IRI="#GasBiofuelsProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherBiogasFromAnaerobicDigestion"/>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherBiogasoline"/>
+        <Class IRI="#Biogasoline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherBiomassPelletsAndBriquettes"/>
+        <Class IRI="#BiomassPelletsAndBriquettes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherChemicalFuelsStorage"/>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherCoalProductNotSpecified"/>
+        <Class IRI="#OtherCoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherCoalProducts"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherElectricStorage"/>
+        <Class IRI="#ElectricStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherElectromagneticStorage"/>
+        <Class IRI="#ElectromagneticStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherKerosene"/>
+        <Class IRI="#Kerosene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherMechanicalStorage"/>
+        <Class IRI="#MechanicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherNaturalGasProducts"/>
+        <Class IRI="#NaturalGasProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherNon-BioRenewableGasFuels"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherNon-BioRenewableLiquidFuels"/>
+        <Class IRI="#Non-BioRenewableLiquidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherNon-BioRenewableSolidFuels"/>
+        <Class IRI="#Non-BioRenewableSolidFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherNon-RenewablePrimaryEnergy"/>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherOffGridSolarPhotovoltaic"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherOilProducts"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherOilProductsNotSpecified"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherPeatProducts"/>
+        <Class IRI="#PeatProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRecoveryGas"/>
+        <Class IRI="#RecoveryGases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRenewableEnergyNotSpecified"/>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRenewablePrimaryEnergy"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherSolidBiofuels"/>
+        <Class IRI="#SecondarySolidBiofuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherSolidHydrogenStorage"/>
+        <Class IRI="#SolidHydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherThermalStorage"/>
+        <Class IRI="#ThermalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Othernon-RenewableSecondaryEnergy"/>
+        <Class IRI="#SecondaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Packed-BedThermalEnergyStorage"/>
+        <Class IRI="#SolidSHS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaperBattery"/>
+        <Class IRI="#ElectrochemicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParabolicDish"/>
+        <Class IRI="#ConcentrateSolarPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParabolicTrough"/>
+        <Class IRI="#ConcentrateSolarPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParaffinWaxes"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatentFuel"/>
+        <Class IRI="#CoalProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peat"/>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peat-BasedAmmonia"/>
+        <Class IRI="#PeatProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peat-BasedHydrogen"/>
+        <Class IRI="#PeatProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeatBriquettes"/>
+        <Class IRI="#PeatProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeatProducts"/>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetroleumCoke"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhaseChangeMaterialThermalEnergyStorage"/>
+        <Class IRI="#LatentHeatStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantHusks"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantShells"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plasma"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PneumaticBedTechnology"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolysulfideBromideFlowBattery"/>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotentialRange30_100kW"/>
+        <Class IRI="#OnGridDistributedPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotentialRangeLess30kW"/>
+        <Class IRI="#OnGridDistributedPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryEnergyDemand"/>
+        <Class IRI="#EnergyDemand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryGasBiofuel"/>
+        <Class IRI="#BioEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryLiquidBiofuel"/>
+        <Class IRI="#BioEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryNon-RenewableEnergy"/>
+        <Class IRI="#PrimarySourceOfEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryOil"/>
+        <Class IRI="#PrimaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryRenewableWaste"/>
+        <Class IRI="#BioEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+        <Class IRI="#PrimarySourceOfEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimarySolidBiofuel"/>
+        <Class IRI="#BioEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimarySourceOfEnergy"/>
+        <Class IRI="#EnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCell"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtonExchangeMembraneElectrolyzer"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydro"/>
+        <Class IRI="#MixedHydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroEnergyStorageSystem"/>
+        <Class IRI="#MechanicalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedThermalEnergyStorage"/>
+        <Class IRI="#ThermalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PureHydropower"/>
+        <Class IRI="#Hydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+        <Class IRI="#WasteToEnergyTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecoveryGases"/>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RefinaryFeedstock"/>
+        <Class IRI="#SecundaryOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RefineryGas"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewableElectroliticHydrogen"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewableIndustrialWaste"/>
+        <Class IRI="#PrimaryRenewableWaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewableMunicipalWaste"/>
+        <Class IRI="#PrimaryRenewableWaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewablePhotovoltaicHydrogen"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenewableThermolyticHydrogen"/>
+        <Class IRI="#Non-BioRenewableGasFuels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReservoirHydropower"/>
+        <Class IRI="#PureHydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotatingCone"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RunOffRiverHydropower"/>
+        <Class IRI="#PureHydropower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalinityGradient"/>
+        <Class IRI="#MarineEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryBionenergy"/>
+        <Class IRI="#SecondaryRenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryEnergyDeman"/>
+        <Class IRI="#EnergyDemand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+        <Class IRI="#SecondaryNon-RenewableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryGasBiofuels"/>
+        <Class IRI="#SecondaryBionenergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+        <Class IRI="#SecondaryBionenergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryNon-BioRenewableFuels"/>
+        <Class IRI="#SecondaryBionenergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryNon-RenewableEnergy"/>
+        <Class IRI="#SecondarySourceOfEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryRenewableEnergy"/>
+        <Class IRI="#SecondarySourceOfEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondarySolidBiofuels"/>
+        <Class IRI="#SecondaryBionenergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondarySourceOfEnergy"/>
+        <Class IRI="#EnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Section"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecundaryOil"/>
+        <Class IRI="#SecondaryFosilFuelSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiCokes"/>
+        <Class IRI="#CoalCoke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiNaturalEcosystem"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensibleHeatStorage"/>
+        <Class IRI="#ThermalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallSolarHomeSystem"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodPeat"/>
+        <Class IRI="#Peat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumIonBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulphurBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftInfrastructure"/>
+        <Class IRI="#AnthropogenicEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solar"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarAirForcedConventionHeating"/>
+        <Class IRI="#SolarAirHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarAirHeating"/>
+        <Class IRI="#SolarThermalEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarAirNaturalConventionHeating"/>
+        <Class IRI="#SolarAirHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarAirRadiationHeating"/>
+        <Class IRI="#SolarAirHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarEnergyConversionTechnology"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarFuels"/>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarLights"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarMiniGrids"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarPhotovoltaicEnergy"/>
+        <Class IRI="#SolarEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarStreetLamps"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarTelecomTowers"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarThermalEnergy"/>
+        <Class IRI="#SolarEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarWaterHeating"/>
+        <Class IRI="#SolarThermalEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarWaterPumps"/>
+        <Class IRI="#OffGridSolarPhotovoltaic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solid-StateBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidHydrogenStorage"/>
+        <Class IRI="#HydrogenStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidOxideElectrolyzer"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidSHS"/>
+        <Class IRI="#SensibleHeatStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidWoodProcessing"/>
+        <Class IRI="#BiomassProcessingResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StraightVegetableOil"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Straw"/>
+        <Class IRI="#HarvestedResidues"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sub-BitominousCoal"/>
+        <Class IRI="#BrownCoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sub-system"/>
+        <Class IRI="#Section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubmersibleSolarWaterPumps"/>
+        <Class IRI="#SolarWaterPumps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Super-Capacitor"/>
+        <Class IRI="#ElectricStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperconductingMagneticStorage"/>
+        <Class IRI="#ElectromagneticStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceSolarWaterPumps"/>
+        <Class IRI="#SolarWaterPumps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SynteticNaturalGas"/>
+        <Class IRI="#ChemicalFuelsStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalGradient"/>
+        <Class IRI="#MarineEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalProcessBiodiesel"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalStorage"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermochemicalEnergyStorage"/>
+        <Class IRI="#ThermalStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermolycHydrogen"/>
+        <Class IRI="#Othernon-RenewableSecondaryEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidalEnergy"/>
+        <Class IRI="#MarineEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransesterifieldBiodiesel"/>
+        <Class IRI="#Biodiesel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TyresWaste"/>
+        <Class IRI="#Non-RenewableIndustrialWaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnglazedSolarWaterHeater"/>
+        <Class IRI="#SolarWaterHeating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UraniumAndPlutonium"/>
+        <Class IRI="#NuclearElectricPower"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanSpace"/>
+        <Class IRI="#HardInfrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utility"/>
+        <Class IRI="#HardInfrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VacuumMicrowave"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VanadiumRedoxFlowBattery"/>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetableResidueBiogas"/>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteToEnergyTechnology"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WastewaterSludgeBiogas"/>
+        <Class IRI="#BiogasFromAnaerobicDigestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterEnergyConversionTechnology"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterSourceHeatPump"/>
+        <Class IRI="#OtherRenewableEnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaveEnergy"/>
+        <Class IRI="#MarineEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetNaturalGas"/>
+        <Class IRI="#NaturalGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteSpirit"/>
+        <Class IRI="#OtherOilProducts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind"/>
+        <Class IRI="#PrimaryRenewableyEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wing"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WithStirrer"/>
+        <Class IRI="#Mechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WoodFuel"/>
+        <Class IRI="#HarvestedBiomass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WoodPelletsAndBriquettes"/>
+        <Class IRI="#BiomassPelletsAndBriquettes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zinc-CeriumBattery"/>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZincAirBattery"/>
+        <Class IRI="#Metal–AirBattery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasOil/DieselOil"/>
+        <Class IRI="#GasOil/DiselOilAndHeavyGasOil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasOil/DiselOilAndHeavyGasOil"/>
+        <Class IRI="#OilProdcuts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manuere/Dung"/>
+        <Class IRI="#AnimalResidue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal–AirBattery"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zinc‐BromineFlowBattery"/>
+        <Class IRI="#FlowBatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#demand_calculation_model"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#disposesEnergy"/>
+        <ObjectProperty IRI="#energyCarrierProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEnergyDemandProfile"/>
+        <ObjectProperty IRI="#energyCarrierProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEnergyTechnology"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFeedstockBiomass"/>
+        <ObjectProperty IRI="#technologyRelations"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFinalProduct"/>
+        <ObjectProperty IRI="#technologyRelations"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMainInputEnergyCarrier"/>
+        <ObjectProperty IRI="#technologyRelations"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMainOutputEnergyCarrier"/>
+        <ObjectProperty IRI="#technologyRelations"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#physical_resolution"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#single_value"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temporal_resolution"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#time_horizon"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#time_reference"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#time_series_forecasting"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#time_stamp"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#time_step"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#unit_of_measure"/>
+        <ObjectProperty IRI="#demand_attributes"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#demand_calculation_model"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#demandsSourceOfEnergy"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#disposesEnergy"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergyDemandProfile"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergyTechnology"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergyTechnology"/>
+        <Class IRI="#EnergyUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeedstockBiomass"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinalProduct"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#EnergyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#EnergyUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMainInputEnergyCarrier"/>
+        <Class IRI="#EnergyTechnology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMainOutputEnergyCarrier"/>
+        <Class IRI="#EnergyTechnology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBasedOnScenario"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGeneratedBy"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#physical_resolution"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedToEnergyCarrier"/>
+        <Class IRI="#PrimaryEnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedToEnergyUser"/>
+        <Class IRI="#FinalEnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#single_value"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temporal_resolution"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#time_horizon"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#time_reference"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#time_series_forecasting"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#time_stamp"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#time_step"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#unit_of_measure"/>
+        <Class IRI="#EnergyDemand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#demandsSourceOfEnergy"/>
+        <Class IRI="#EnergySource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#disposesEnergy"/>
+        <Class IRI="#EnergySource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnergyDemandProfile"/>
+        <Class IRI="#EnergyDemandProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnergyTechnology"/>
+        <Class IRI="#EnergyTechnology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedstockBiomass"/>
+        <Class IRI="#PrimarySolidBiofuel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedstockBiomass"/>
+        <Class IRI="#SecondarySolidBiofuels"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinalProduct"/>
+        <Class IRI="#SecondaryGasBiofuels"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinalProduct"/>
+        <Class IRI="#SecondaryLiquidBiofuels"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#PhysicalGeographicLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMainInputEnergyCarrier"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMainOutputEnergyCarrier"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBasedOnScenario"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGeneratedBy"/>
+        <Class IRI="#EnergyUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedToEnergyCarrier"/>
+        <Class IRI="#EnergyCarrier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedToEnergyUser"/>
+        <Class IRI="#EnergyUser"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CO2_emission_per_hour"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CO2_emissions_per_kWh"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CO2_intensity"/>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CO2_intensity_per_hour"/>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ambient_atmosphere"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#capital_cost"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#charging_efficiency"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#control_and_communication_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#conversion_cost_operational_and_maintenance_per_energy"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#conversion_efficiency"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#conversion_efficiency_per_time_step"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coupled_capacity"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#current_state_of_charge"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#curtailment_factor"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cut_in_speed"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cut_off_speed"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#decommissioning_cost"/>
+        <DataProperty IRI="#ecconomic_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#demand_calculation_model"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disassembly_or_removal_cost"/>
+        <DataProperty IRI="#decommissioning_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#discharging_efficiency"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disconnection_cost"/>
+        <DataProperty IRI="#decommissioning_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#downstream_production_time"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ecconomic_attribute"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#efficiency_in"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#efficiency_out"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+        <DataProperty IRI="#energy_carrier_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+        <DataProperty IRI="#energy_carrier_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_carrier_type"/>
+        <DataProperty IRI="#energy_carrier_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_consumption"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+        <DataProperty IRI="#energy_technology_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_storage_attribute"/>
+        <DataProperty IRI="#energy_technology_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#energy_use_sector_type"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#engineerings_procurement_and_construction_cost"/>
+        <DataProperty IRI="#installed_capital_price"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#environmental_attribute"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#export_price_per_kWh"/>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fixed_operational_and_maintenance_cost"/>
+        <DataProperty IRI="#operating_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#flow_rate"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#general_technology_attribute"/>
+        <DataProperty IRI="#energy_technology_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#grid_integration_cost"/>
+        <DataProperty IRI="#installed_capital_price"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#heat_rate"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#heating_supply_system_type"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#import_cost_per_kWh"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#installed_capital_price"/>
+        <DataProperty IRI="#ecconomic_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#installed_cost_components"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#insurance_cost"/>
+        <DataProperty IRI="#operating_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lifecycle_C02_emmissions"/>
+        <DataProperty IRI="#environmental_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lifetime"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lifetime_of_stack"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lifetime_of_system"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_capacity_per_installation"/>
+        <DataProperty IRI="#system_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_charging_rate"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_discharging_rate"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_export_capacity"/>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_export_capacity_per_hour"/>
+        <DataProperty IRI="#energy_carrier_export_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_import_capacity"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_import_capacity_per_hour"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_ramping_down"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_ramping_up"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_state_of_charge"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_total_energy_output"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximum_value_for_annual_import"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_capacity_per_installation"/>
+        <DataProperty IRI="#system_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_capacity_per_technology"/>
+        <DataProperty IRI="#system_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_import_capacity"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_import_capacity_per_hour"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_state_of_charge"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_total_energy_output"/>
+        <DataProperty IRI="#genaral_conversion_performance_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimum_value_for_annual_import"/>
+        <DataProperty IRI="#energy_carrier_import_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nominal_wind_speed"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#operating_cost"/>
+        <DataProperty IRI="#ecconomic_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#particle_density"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#patrticle_size"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#physical_resolution"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#power_equipment_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pre_installed_capacity"/>
+        <DataProperty IRI="#system_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pre_installed_remaining_lifetime"/>
+        <DataProperty IRI="#system_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#preprocessing_time"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pressure"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pressure_range"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#price"/>
+        <DataProperty IRI="#energy_carrier_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#process_type"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#project_development-cost"/>
+        <DataProperty IRI="#installed_capital_price"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rated_speed"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#recycling_or_disposal_cost"/>
+        <DataProperty IRI="#decommissioning_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#residence_time"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rotor_area"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#round-trip_efficiency_losses_cost"/>
+        <DataProperty IRI="#operating_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#round-trip_efficiency_losses_cost"/>
+        <DataProperty IRI="#storage_operating_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#single_value"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#site_remediation_cost"/>
+        <DataProperty IRI="#decommissioning_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#solar_conversion_attribute"/>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#spatial_scale"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#standby_loss"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#storage_balance_of_system_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#storage_block_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#storage_operating_cost"/>
+        <DataProperty IRI="#energy_storage_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#storage_system_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#system_attributes"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#system_design_type"/>
+        <DataProperty IRI="#pyrolysis_convesion_attibute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#system_integration_cost"/>
+        <DataProperty IRI="#installed_cost_components"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#technology_readiness_level"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temperature"/>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temperature_range"/>
+        <DataProperty IRI="#electrolizer_attibutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temporal_resolution"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temporal_scale"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_horizon"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_reference"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_series_forecasting"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_stamp"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_step"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#turbine_footprint"/>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#type_of_technology"/>
+        <DataProperty IRI="#general_technology_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#unit_of_measure"/>
+        <DataProperty IRI="#demand_attributes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#variable_operational_and_maintenance_cost_per_capacity"/>
+        <DataProperty IRI="#operating_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#wind_conversion_attribute"/>
+        <DataProperty IRI="#energy_conversion_attribute"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CO2_emission_per_hour"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CO2_emissions_per_kWh"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CO2_intensity"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CO2_intensity_per_hour"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ID"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ambient_atmosphere"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capital_cost"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#charging_efficiency"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#control_and_communication_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#conversion_cost_operational_and_maintenance_per_energy"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#conversion_efficiency"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#conversion_efficiency_per_time_step"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coupled_capacity"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#current_state_of_charge"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#curtailment_factor"/>
+        <Class IRI="#SolarEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cut_in_speed"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cut_off_speed"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disassembly_or_removal_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#discharging_efficiency"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disconnection_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#downstream_production_time"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#efficiency_in"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#efficiency_out"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#energy_carrier_type"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#energy_consumption"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#energy_use_sector_type"/>
+        <Class IRI="#AnthropogenicEcosystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#engineerings_procurement_and_construction_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#export_price_per_kWh"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fixed_operational_and_maintenance_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#flow_rate"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#grid_integration_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#heat_rate"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#heating_supply_system_type"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#import_cost_per_kWh"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#insurance_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lifecycle_C02_emmissions"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lifetime"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lifetime_of_stack"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lifetime_of_system"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_capacity_per_installation"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_charging_rate"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_discharging_rate"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_export_capacity"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_export_capacity_per_hour"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_import_capacity"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_import_capacity_per_hour"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_ramping_down"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_ramping_up"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_state_of_charge"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_total_energy_output"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximum_value_for_annual_import"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_capacity_per_installation"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_capacity_per_technology"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_import_capacity"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_import_capacity_per_hour"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_state_of_charge"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_total_energy_output"/>
+        <Class IRI="#EnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimum_value_for_annual_import"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nominal_wind_speed"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#particle_density"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#patrticle_size"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#power_equipment_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pre_installed_capacity"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pre_installed_remaining_lifetime"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preprocessing_time"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pressure"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pressure_range"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#EnergyCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#process_type"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#project_development-cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pyrolysis_process_control_attributes"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rated_speed"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#recycling_or_disposal_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#residence_time"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rotor_area"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#round-trip_efficiency_losses_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#site_remediation_cost"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#spatial_scale"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#standby_loss"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#storage_balance_of_system_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#storage_block_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#storage_system_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#system_design_type"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#system_integration_cost"/>
+        <Class IRI="#EnergyStorageTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#technology_readiness_level"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperature"/>
+        <Class IRI="#PyrolysisEnergyConversionTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperature_range"/>
+        <Class IRI="#ElectrolysersTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temporal_scale"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#turbine_footprint"/>
+        <Class IRI="#WindEnergyTechnologyConversion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_of_technology"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#variable_operational_and_maintenance_cost_per_capacity"/>
+        <Class IRI="#EnergyTechnology"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CO2_emission_per_hour"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CO2_emissions_per_kWh"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CO2_intensity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CO2_intensity_per_hour"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ambient_atmosphere"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capital_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#charging_efficiency"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#control_and_communication_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#conversion_cost_operational_and_maintenance_per_energy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#conversion_efficiency"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#conversion_efficiency_per_time_step"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#coupled_capacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#current_state_of_charge"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cut_in_speed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cut_off_speed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#demand_calculation_model"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disassembly_or_removal_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#discharging_efficiency"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disconnection_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#downstream_production_time"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#efficiency_in"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#efficiency_out"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#energy_carrier_type"/>
+        <DataOneOf>
+            <Literal>Export</Literal>
+            <Literal>Import</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#energy_consumption"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#energy_storage_attribute"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#energy_use_sector_type"/>
+        <DataOneOf>
+            <Literal>Commercial</Literal>
+            <Literal>Industrial</Literal>
+            <Literal>Residential</Literal>
+            <Literal>Services</Literal>
+            <Literal>Transport</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#engineerings_procurement_and_construction_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#export_price_per_kWh"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fixed_operational_and_maintenance_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#flow_rate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#grid_integration_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#heat_rate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#heating_supply_system_type"/>
+        <DataOneOf>
+            <Literal>Burning</Literal>
+            <Literal>Hot-gases</Literal>
+            <Literal>Inner-hot-material</Literal>
+            <Literal>Reactor-walls</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#import_cost_per_kWh"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#insurance_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lifecycle_C02_emmissions"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lifetime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lifetime_of_stack"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lifetime_of_system"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_capacity_per_installation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_charging_rate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_discharging_rate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_export_capacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_export_capacity_per_hour"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_import_capacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_import_capacity_per_hour"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_ramping_down"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_ramping_up"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_state_of_charge"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_total_energy_output"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximum_value_for_annual_import"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_capacity_per_installation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_capacity_per_technology"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_import_capacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_state_of_charge"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_total_energy_output"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimum_value_for_annual_import"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nominal_wind_speed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#particle_density"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#patrticle_size"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#physical_resolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#power_equipment_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pre_installed_capacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pre_installed_remaining_lifetime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#preprocessing_time"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pressure"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pressure_range"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#process_type"/>
+        <DataOneOf>
+            <Literal> Methane-pyrolysis</Literal>
+            <Literal>Fast</Literal>
+            <Literal>Flash</Literal>
+            <Literal>Flash-gas</Literal>
+            <Literal>Flash-liquid</Literal>
+            <Literal>Hydro-pyrolysis</Literal>
+            <Literal>Intermediate</Literal>
+            <Literal>Slow</Literal>
+            <Literal>Ultra</Literal>
+            <Literal>Vacuum</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#project_development-cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rated_speed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#recycling_or_disposal_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#residence_time"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rotor_area"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#round-trip_efficiency_losses_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#single_value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#site_remediation_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spatial_scale"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#standby_loss"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#storage_balance_of_system_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#storage_block_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#storage_system_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#system_design_type"/>
+        <DataOneOf>
+            <Literal>Batch</Literal>
+            <Literal>Bubbling-fluidized-bed</Literal>
+            <Literal>Entrained-flow</Literal>
+            <Literal>Fixed Bed</Literal>
+            <Literal>Rotary-klein</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#system_integration_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#technology_readiness_level"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature_range"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temporal_resolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temporal_scale"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time_horizon"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time_reference"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time_series_forecasting"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time_stamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time_step"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#turbine_footprint"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type_of_technology"/>
+        <DataOneOf>
+            <Literal>Distribution</Literal>
+            <Literal>Generation</Literal>
+            <Literal>Storage Technology</Literal>
+            <Literal>Transformation Technology</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unit_of_measure"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#variable_operational_and_maintenance_cost_per_capacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#AlkalineElectrolyzer</IRI>
+        <Literal xml:lang="en">AEL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AlkalineElectrolyzer</IRI>
+        <Literal xml:lang="en">Currently available on the market</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#AnthropogenicEcosystem</IRI>
+        <Literal xml:lang="en">They are substantially transformed by human activity, e.g. via wetland drainage, intensive cultivation and/or infrastructure and buildings. Key examples of such ecosystems include intensively used farmland areas, urban areas and certain forest types, such as Eucalyptus or mono-species conifer plantations. They are generally species-poor and would benefit from nature restoration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#AquiferThermalEnergyStorage</IRI>
+        <Literal xml:lang="en">ATES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BIo-ETBE</IRI>
+        <Literal xml:lang="en">Ethyl tertiary-butyl ether (ETBE)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#BatteryEnergyStorage</IRI>
+        <Literal xml:lang="en">BES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Synonysm"/>
+        <IRI>#Bio-DME</IRI>
+        <Literal xml:lang="en">Methoxymethane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bio-DME</IRI>
+        <Literal xml:lang="en">Dimethyl ether (DME)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bio-MTBE</IRI>
+        <Literal xml:lang="en">Metyl tert-butyl ether (MTBE)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Building</IRI>
+        <Literal xml:lang="en">The building infrastructure refers largely to architectural space defined as single or grouped buildings formingpart of an urban block. This will include dwellings, educational buildings, healthcare buildings, among others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Building</IRI>
+        <Literal xml:lang="en">Related to GWR building category or building class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#CompressedAirEnergyStorageSystem</IRI>
+        <Literal xml:lang="en">CAES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#EnergyConversionTechnology</IRI>
+        <Literal xml:lang="en">Energy conversion technology refers to any system that converts energy from one form to another. Energy comes in different forms, including heat, work and motion. Moreover, potential energy can be in the form of nuclear, chemical, elastic, gravitational, or radiant energy (also known as light). All of these can be converted into useful energy, with the one of the most common and versatile forms being electricity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#EnergyDemand</IRI>
+        <Literal xml:lang="en">Energy demand  correspond to the amount of energy required to satisfy individual energy needs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#FinalEnergyDemand</IRI>
+        <Literal xml:lang="en"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#FinalEnergyDemand</IRI>
+        <Literal xml:lang="en">Demand related to the consumer for specific use. Final energy is what a consumer buys and receives, such as electricity in their home; heating; or petrol at the fuel pump.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#FlowBatteryEnergyStorage</IRI>
+        <Literal xml:lang="en">FBES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#FlywheelEnergyStorageSystem</IRI>
+        <Literal xml:lang="en">FES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#GravityEnergyStorageSystem</IRI>
+        <Literal xml:lang="en">GES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#GreenInfrastructure</IRI>
+        <Literal xml:lang="en">Green infrastructure (also sometimes called ecological infrastructure, environmental infrastructure or natural infrastructure) refers to a “strategically planned and managed network[s] of natural lands, such as forests and wetlands, working landscapes, and other open spaces that conserves or enhances ecosystem values and functions and provides associated benefits to human populations”. 
+Green infrastructure can be either naturally occurring or naturalized, but the defining feature is that it is actively managed; if it is not actively managed it is simply “nature”.
+Natural infrastructure can function on its own or be used to complement built infrastructure, and elements of natural infrastructure can be incorporated into
+the design of built infrastructure (e.g., green roofs and walls), resulting in hybrid infrastructure (also referred to as grey-green infrastructure).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#GroundSourceHeatPump</IRI>
+        <Literal xml:lang="en">GSHPs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#HardInfrastructure</IRI>
+        <Literal xml:lang="en">Hard infrastructure includes physical structures or the equipment in place to support urban systems and services. For example, roads, railways, power transmission lines and bridges are some of the many examples of hard infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#Ice-CoolThermalEnergyStorage</IRI>
+        <Literal xml:lang="en">ITES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#LatentHeatStorage</IRI>
+        <Literal xml:lang="en">(LHS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#Lead-AcidBattery</IRI>
+        <Literal xml:lang="en">LA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#Lithium-IonBattery</IRI>
+        <Literal xml:lang="en">LI-ion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#LithiumIronPhosphateBattery</IRI>
+        <Literal xml:lang="en">LFP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#LithiumNickelManganeseCobaltOxides</IRI>
+        <Literal xml:lang="en">NMC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#NaturalEcosystem</IRI>
+        <Literal xml:lang="en">These ecosystems include natural forests, peat bogs, high mountain habitats, oceans, lakes and rivers. They can be strongly impacted by human activities but will recover on their own if these pressures are removed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#Nickel-CadmiumBattery</IRI>
+        <Literal xml:lang="en">Ni-Cd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#PhaseChangeMaterialThermalEnergyStorage</IRI>
+        <Literal xml:lang="en">PCM-TES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#PolysulfideBromideFlowBattery</IRI>
+        <Literal xml:lang="en">(PSB)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#PrimaryEnergyDemand</IRI>
+        <Literal xml:lang="en">Demand for available as energy resources – such as the fuels that are burnt in power plants –  before it has been transformed. This relates to the coal before it has been burned; the uranium; or the barrels of oil.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#ProtonExchangeMembraneElectrolyzer</IRI>
+        <Literal xml:lang="en">PEMEL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProtonExchangeMembraneElectrolyzer</IRI>
+        <Literal xml:lang="en">Iin the development stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#PumpedHydroEnergyStorageSystem</IRI>
+        <Literal xml:lang="en">PHES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#PumpedThermalEnergyStorage</IRI>
+        <Literal xml:lang="en">PTES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#SecondaryEnergyDeman</IRI>
+        <Literal xml:lang="en">Demand of energy resulting from the conversion of  primary energy into a transportable form of energy. Secondary energy includes liquid fuels (such as gasoline and diesel – which are refined oil), electricity, and heat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#SemiNaturalEcosystem</IRI>
+        <Literal xml:lang="en">They have been created by human land use over the last 10,000 years or so, mainly via different types of livestock grazing and biomass harvesting. They include habitats such as lowland hay meadows, heathlands or steppic grasslands. Nearly all semi-natural ecosystems depend on a continuation of traditional, extensive land use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#SensibleHeatStorage</IRI>
+        <Literal xml:lang="en">SHS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#SodiumIonBattery</IRI>
+        <Literal xml:lang="en">Na-ion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#SodiumSulphurBattery</IRI>
+        <Literal xml:lang="en">NaS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#SoftInfrastructure</IRI>
+        <Literal xml:lang="en">Soft infrastructure refers to institutions that contribute to maintaining economic, social and cultural standards. Examples could include the education system, healthcare and law enforcement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#Solid-StateBattery</IRI>
+        <Literal xml:lang="en">SSBs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#SolidOxideElectrolyzer</IRI>
+        <Literal xml:lang="en">SOEL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SolidOxideElectrolyzer</IRI>
+        <Literal xml:lang="en">Still in the research/demonstration stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#SynteticNaturalGas</IRI>
+        <Literal xml:lang="en">SNG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#ThermochemicalEnergyStorage</IRI>
+        <Literal xml:lang="en">TCES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#UrbanSpace</IRI>
+        <Literal xml:lang="en">Urban space is considered largely as boundedspace, in the form of streets, urban plazas or local squares,playgrounds, parks and so on. Urban space is typically identifiable at the neighbourhood scale or district scale, dependingon the nature of the open space and pattern of land ownership.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Utility</IRI>
+        <Literal xml:lang="en">Utilities refer to physical services such as transportation, water and waste systems, information and communications technology (ICT), etc. These utilities connectand operate equally across all urban scales, including nationaland international interconnectivity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#VanadiumRedoxFlowBattery</IRI>
+        <Literal xml:lang="en">RFBs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Synonysm"/>
+        <IRI>#WasteToEnergyTechnology</IRI>
+        <Literal xml:lang="en">Incinarator
+Combustion Facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Wing</IRI>
+        <Literal xml:lang="en">A wing is part of a building – or any feature of a building – that is subordinate to the main, central structure. The individual wings may directly adjoin the main building or may be built separately and joined to it by a connecting structure such as a colonnade or pergola.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ambient_atmosphere</IRI>
+        <Literal xml:lang="en">Value O/I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#capital_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#control_and_communication_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conversion_cost_operational_and_maintenance_per_energy</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conversion_efficiency</IRI>
+        <Literal xml:lang="en">value between 0≬1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conversion_efficiency_per_time_step</IRI>
+        <Literal xml:lang="en">value between 0≬1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coupled_capacity</IRI>
+        <Literal>Value O/I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#current_state_of_charge</IRI>
+        <Literal>SoC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#current_state_of_charge</IRI>
+        <Literal xml:lang="en">value between 0≬1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#cut_in_speed</IRI>
+        <Literal xml:lang="en">The cut-in speed (typically between 6 and 9 mph) is when the blades start rotating and generating power.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cut_in_speed</IRI>
+        <Literal xml:lang="en">value in mph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#cut_off_speed</IRI>
+        <Literal xml:lang="en">After reaching cut-out speed (varies by turbine),the turbine is shuting down to prevent unnecessary strain on the rotor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#cut_off_speed</IRI>
+        <Literal xml:lang="en">Value in mph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disassembly_or_removal_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discharging_efficiency</IRI>
+        <Literal xml:lang="es">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disconnection_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#downstream_production_time</IRI>
+        <Literal xml:lang="en">value in minutes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#efficiency_in</IRI>
+        <Literal xml:lang="en">Velues 0≬1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#efficiency_out</IRI>
+        <Literal xml:lang="en">Values 0≬1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#energy_consumption</IRI>
+        <Literal xml:lang="en">value in kWh/kgH_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#energy_use_sector_type</IRI>
+        <Literal xml:lang="en">{&quot;Residential&quot;, &quot;Industrial&quot;, &quot;Commercial&quot;, &quot;Services&quot;, &quot;Transport&quot;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#engineerings_procurement_and_construction_cost</IRI>
+        <Literal xml:lang="en">Cost that includes nonrecurring engineering costs and construction equipment as well as siting, installation, and commissioning of the ESS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#engineerings_procurement_and_construction_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#fixed_operational_and_maintenance_cost</IRI>
+        <Literal xml:lang="en">A cost that includes all costs necessary to keep theenergy technology operational throughout its life that do not fluctuate based on energy throughput, such as planned maintenance, parts, and labor and benefits for staff.
+This also includes major overhaul-related maintenance which may depend on energy throughput or occurs at fixed time intervals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fixed_operational_and_maintenance_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kW-year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#flow_rate</IRI>
+        <Literal xml:lang="en">Value in LPM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#genaral_conversion_performance_attribute</IRI>
+        <Literal xml:lang="en">value O/I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#grid_integration_cost</IRI>
+        <Literal xml:lang="en">Costs associated with connecting the EnergyTechnology to the grid, including transformer cost, metering, and isolation breakers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grid_integration_cost</IRI>
+        <Literal xml:lang="en">Value in M.U./kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#heat_rate</IRI>
+        <Literal xml:lang="en">Value in °C/min</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#import_cost_per_kWh</IRI>
+        <Literal xml:lang="en">value in M.U./TWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#insurance_cost</IRI>
+        <Literal xml:lang="en">Insurance fees to hold a policy to cover unknown and/or unexpected risks. The terms of this cost may depend on developer reputation, project complexity, location, and financial strength.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#insurance_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifecycle_C02_emmissions</IRI>
+        <Literal xml:lang="en">Value in kg-CO2/kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifetime</IRI>
+        <Literal xml:lang="en">Value in years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifetime_of_stack</IRI>
+        <Literal xml:lang="en">value in hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifetime_of_system</IRI>
+        <Literal xml:lang="en">value in years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maximum_capacity_per_installation</IRI>
+        <Literal xml:lang="en">value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maximum_ramping_down</IRI>
+        <Literal xml:lang="en">value in percentage/min</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maximum_ramping_up</IRI>
+        <Literal xml:lang="en">value in percentage/min</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maximum_total_energy_output</IRI>
+        <Literal xml:lang="en">Value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minimum_capacity_per_installation</IRI>
+        <Literal xml:lang="en">value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minimum_capacity_per_technology</IRI>
+        <Literal xml:lang="en">value in 9kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minimum_total_energy_output</IRI>
+        <Literal xml:lang="en">value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nominal_wind_speed</IRI>
+        <Literal xml:lang="en">value in m/s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#power_equipment_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pre_installed_capacity</IRI>
+        <Literal xml:lang="en">value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pre_installed_remaining_lifetime</IRI>
+        <Literal xml:lang="en">value in kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#preprocessing_time</IRI>
+        <Literal xml:lang="en">value in minutes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pressure</IRI>
+        <Literal>value in kPa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pressure_range</IRI>
+        <Literal xml:lang="en">range values in barA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#price</IRI>
+        <Literal xml:lang="en">value in M.U./TWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#project_development-cost</IRI>
+        <Literal xml:lang="en">Costs associated with permitting, power purchase agreements, interconnection agreements, site control, and financing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#project_development-cost</IRI>
+        <Literal xml:lang="en">value in M.U./kW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#rated_speed</IRI>
+        <Literal xml:lang="en">The rated speed is the point that the turbine produces its maximum, or rated power, as wind speeds increase, more electricity is generated until it reaches this limit..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#recycling_or_disposal_cost</IRI>
+        <Literal xml:lang="en">Net costs associated with recycling and disposing of components less any costs recouped from sale of materials. The value of recouped materials is typically measured in cents/pound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#recycling_or_disposal_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rotor_area</IRI>
+        <Literal xml:lang="en">value in m2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#round-trip_efficiency_losses_cost</IRI>
+        <Literal xml:lang="en">Round-trip efficiency is simply the ratio of energy discharged to the grid from a starting state of charge to the energy received from the grid to bring the ESS to the same starting state of charge. RTE is &lt; 1 due to losses related to thermal management, auxiliary power consumption, electrochemical losses, power conversion losses, powertrain-related electromechanical losses, energy conversion losses, self-discharge, evaporation, stored heat or gas/air leakage losses. This value for RTE losses is estimated through the cost of the additional electricity and fuel required per kWh of energy discharged due to the losses described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#round-trip_efficiency_losses_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#site_remediation_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#spatial_scale</IRI>
+        <Literal xml:lang="en">Spatial scale is a specific application of the term scale for describing or categorizing (e.g. into orders of magnitude) the size of a space (hence spatial), or the extent of it at which a phenomenon or process occurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#storage_balance_of_system_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#storage_block_cost</IRI>
+        <Literal xml:lang="en">value in M.Um/kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#storage_system_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#system_integration_cost</IRI>
+        <Literal xml:lang="en">value in M.U./kWh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#abbreviation"/>
+        <IRI>#technology_readiness_level</IRI>
+        <Literal xml:lang="en">TRL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temperature</IRI>
+        <Literal xml:lang="en">Value in °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temperature_range</IRI>
+        <Literal xml:lang="en">range values in °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#turbine_footprint</IRI>
+        <Literal xml:lang="en">value in W/m2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variable_operational_and_maintenance_cost_per_capacity</IRI>
+        <Literal xml:lang="en">value in M.U./kW-year</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
